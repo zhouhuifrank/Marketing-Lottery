@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="319489a9-dbfe-4feb-8acb-845f39171f2f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/07a05315-17a2-426f-959f-5e9b82685e6c.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/07a05315-17a2-426f-959f-5e9b82685e6c/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/07a05315-17a2-426f-959f-5e9b82685e6c/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/07a05315-17a2-426f-959f-5e9b82685e6c/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/07a05315-17a2-426f-959f-5e9b82685e6c/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6dce998a-dc53-4853-b030-fdac7afd435e.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6dce998a-dc53-4853-b030-fdac7afd435e/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6dce998a-dc53-4853-b030-fdac7afd435e/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6dce998a-dc53-4853-b030-fdac7afd435e/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/6dce998a-dc53-4853-b030-fdac7afd435e/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/77a5ee20-1b55-4136-b280-372b58f06663.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/77a5ee20-1b55-4136-b280-372b58f06663/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/77a5ee20-1b55-4136-b280-372b58f06663/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/77a5ee20-1b55-4136-b280-372b58f06663/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/77a5ee20-1b55-4136-b280-372b58f06663/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/796a447c-4d41-4b43-b929-db083222bdbc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/796a447c-4d41-4b43-b929-db083222bdbc/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/796a447c-4d41-4b43-b929-db083222bdbc/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/796a447c-4d41-4b43-b929-db083222bdbc/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/796a447c-4d41-4b43-b929-db083222bdbc/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HELP.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-application/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-common/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/repository/IActivityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/repository/IUserTakeActivityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/deploy/IActivityDeploy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/deploy/impl/ActivityDeploy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/AbstractStateBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/IStateHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/StateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/ArraignmentState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/CloseState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/DoingState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/EditingState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/OpenState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/PassState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/RefuseState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/impl/StateHandlerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/award/repository/IAwardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/award/service/factory/AwardConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/award/service/factory/AwardDistributionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/award/service/goods/AbstractDistributionBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/award/service/goods/IDistributionGoods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/award/service/goods/impl/CouponGood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/award/service/goods/impl/DescriptionGood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/award/service/goods/impl/PhysicalGood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/award/service/goods/impl/RedeemCodeGood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/ids/IIdGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/ids/IdContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/ids/generator/RandomNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/ids/generator/RedisId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/ids/generator/SnowFlake.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/ids/generator/TimeCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/repository/IStrategyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/AbstractAlgorithmBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/IDrawAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/impl/EntiretyRateDrawAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/impl/SingleRateDrawAlgorithm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/AbstractDrawBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/DrawConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/DrawSupport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/IDrawExecute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/impl/DrawExecuteImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/Activity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/Award.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/RuleTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/RuleTreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/RuleTreeNodeLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/Strategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/StrategyDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/UserStrategyExport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/UserTakeActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/UserTakeActivityCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/ActivityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/AwardMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeNodeLineMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeNodeMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/StrategyDetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/StrategyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/UserStrategyExportMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/UserTakeActivityCountMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/UserTakeActivityMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/IRedisLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/RedisData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/RedisKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/RedisLockUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/StringRedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/repository/ActivityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/repository/AwardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/repository/RuleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/repository/StrategyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/repository/UserTakeActivityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/ActivityMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/AwardMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/RuleTreeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/RuleTreeNodeLineMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/RuleTreeNodeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/StrategyDetailMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/StrategyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/UserStrategyExportMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/UserTakeActivityCountMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/UserTakeActivityMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/scripts/unlock.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/test/java/com/frankzhou/infrastructure/LotteryInfrastructureApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/LotteryInterfacesApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/config/MybatisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/config/RedissonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/interfaces/ActivityBooth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/LotteryInterfacesApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-rpc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-rpc/src/main/java/com/frankzhou/rpc/IActivityBooth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-rpc/src/main/java/com/frankzhou/rpc/dto/ActivityDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-rpc/src/main/java/com/frankzhou/rpc/req/ActivityReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-rpc/src/main/java/com/frankzhou/rpc/res/ActivityRes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="NewLua" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\RepMaven" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../develop/apache-maven-3.5.4" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="C:\Users\22806\.m2\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2LBK9wkkIyOpCuSrD0T9mSLbAI8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "1.8",
+    "last_opened_file_path": "D:/TechLearn/DDD-Marketing/Marketing-Lottery",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "spring.configuration.checksum": "7b384ac97904fbb95a51b3aebd603c7e",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.LotteryInterfacesApplication">
+    <configuration name="LotteryInterfacesApplication-dev" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="Lottery-interfaces" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.frankzhou.lottery.LotteryInterfacesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LotteryInterfacesApplication-prod" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="Lottery-interfaces" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.frankzhou.lottery.LotteryInterfacesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LotteryInterfacesApplication-test" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="Lottery-interfaces" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.frankzhou.lottery.LotteryInterfacesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LotteryInterfacesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" />
+      <module name="Lottery-interfaces" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.frankzhou.lottery.LotteryInterfacesApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.LotteryInterfacesApplication" />
+      <item itemvalue="Spring Boot.LotteryInterfacesApplication-dev" />
+      <item itemvalue="Spring Boot.LotteryInterfacesApplication-test" />
+      <item itemvalue="Spring Boot.LotteryInterfacesApplication-prod" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="319489a9-dbfe-4feb-8acb-845f39171f2f" name="Changes" comment="" />
+      <created>1675338890708</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675338890708</updated>
+      <workItem from="1675338892175" duration="1769000" />
+      <workItem from="1675341731324" duration="7000" />
+      <workItem from="1675341775291" duration="7459000" />
+      <workItem from="1675844619446" duration="4426000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
