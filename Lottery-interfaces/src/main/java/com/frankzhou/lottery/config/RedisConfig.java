@@ -4,6 +4,7 @@ import cn.hutool.core.collection.CollectionUtil;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.data.redis.RedisProperties;
 import org.springframework.cache.annotation.EnableCaching;
+import org.springframework.cache.jcache.config.JCacheConfigurerSupport;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisClusterConfiguration;
@@ -25,7 +26,7 @@ import java.util.Objects;
  */
 @Configuration
 @EnableCaching
-public class RedisConfig {
+public class RedisConfig extends JCacheConfigurerSupport {
 
     @Resource
     private RedisProperties redisProperties;

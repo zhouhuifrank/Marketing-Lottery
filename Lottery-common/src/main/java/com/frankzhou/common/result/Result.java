@@ -1,7 +1,7 @@
 package com.frankzhou.common.result;
 
-import com.frankzhou.lottery.common.constants.ResponseCode;
-import com.frankzhou.lottery.common.constants.ResponseConstants;
+import com.frankzhou.common.constants.ResponseCode;
+import com.frankzhou.common.constants.ResponseConstants;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

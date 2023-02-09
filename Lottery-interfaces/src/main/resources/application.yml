@@ -31,7 +31,7 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: ASSIGN_ID
-  mapper-locations: classpath:/mappers/*.xml
+  mapper-locations: classpath:mappers/*.xml
 
 # Dubbo+Zookeeper
 dubbo:
@@ -41,8 +41,8 @@ dubbo:
   registry:
     # address: multicast://224.5.6.7:1234
     address: N/A
-  # address: nacos://192.168.10.132:8848
-  # address: zookeeper://192.168.10.132:2181
+    # address: nacos://192.168.10.132:8848
+    # address: zookeeper://192.168.10.132:2181
   protocol:
     name: dubbo
     port: 20880

@@ -5,12 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="319489a9-dbfe-4feb-8acb-845f39171f2f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Lottery-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/LotteryInterfacesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/LotteryInterfacesApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-rpc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-rpc/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/redis/RedisTemplateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/redis/RedissonTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/redis/StringTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/Award.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/Award.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/Strategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/StrategyDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/StrategyDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/ActivityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/ActivityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/AwardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/AwardMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeNodeLineMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeNodeLineMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeNodeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeNodeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/StrategyDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/StrategyDetailMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/StrategyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/StrategyMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/UserStrategyExportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/UserStrategyExportMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/UserTakeActivityCountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/UserTakeActivityCountMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/UserTakeActivityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/UserTakeActivityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/RedisLockUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/RedisLockUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/StringRedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/StringRedisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/scripts/unlock.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/scripts/unlock.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/test/java/com/frankzhou/infrastructure/LotteryInfrastructureApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +53,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -83,28 +102,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/TechLearn/DDD-Marketing/Marketing-Lottery",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "7b384ac97904fbb95a51b3aebd603c7e",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/TechLearn/DDD-Marketing/Marketing-Lottery/Lottery-common/src/main/java/com/frankzhou/common/constants&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;0038f9d0d7898c979e3b2ae63cad4b06&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-common\src\main\java\com\frankzhou\common\constants" />
+      <recent name="D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-common\src\main\java\com\frankzhou\common\exception" />
+      <recent name="D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-common\src\main\java\com\frankzhou\common\result" />
+      <recent name="D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-common\src\main\java\com\frankzhou\common\support" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -112,7 +139,71 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LotteryInterfacesApplication">
+  <component name="RunManager" selected="JUnit.StringTemplateTest.testStringCache">
+    <configuration name="LotteryInfrastructureApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lottery-infrastructure" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frankzhou.infrastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frankzhou.infrastructure" />
+      <option name="MAIN_CLASS_NAME" value="com.frankzhou.infrastructure.LotteryInfrastructureApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LotteryInterfacesApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lottery-interfaces" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frankzhou.lottery.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frankzhou.lottery" />
+      <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.LotteryInterfacesApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedissonTest.testLock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lottery-interfaces" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frankzhou.lottery.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frankzhou.lottery.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.redis.RedissonTest" />
+      <option name="METHOD_NAME" value="testLock" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringTemplateTest.testStringCache" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lottery-interfaces" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frankzhou.lottery.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frankzhou.lottery.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.redis.StringTemplateTest" />
+      <option name="METHOD_NAME" value="testStringCache" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LotteryInterfacesApplication-dev" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ACTIVE_PROFILES" />
       <module name="Lottery-interfaces" />
@@ -146,11 +237,23 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.LotteryInfrastructureApplicationTests.contextLoads" />
+      <item itemvalue="JUnit.RedissonTest.testLock" />
+      <item itemvalue="JUnit.StringTemplateTest.testStringCache" />
+      <item itemvalue="JUnit.LotteryInterfacesApplicationTests.contextLoads" />
       <item itemvalue="Spring Boot.LotteryInterfacesApplication" />
       <item itemvalue="Spring Boot.LotteryInterfacesApplication-dev" />
       <item itemvalue="Spring Boot.LotteryInterfacesApplication-test" />
       <item itemvalue="Spring Boot.LotteryInterfacesApplication-prod" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.StringTemplateTest.testStringCache" />
+        <item itemvalue="JUnit.RedissonTest.testLock" />
+        <item itemvalue="JUnit.LotteryInterfacesApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.LotteryInfrastructureApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -163,7 +266,10 @@
       <workItem from="1675338892175" duration="1769000" />
       <workItem from="1675341731324" duration="7000" />
       <workItem from="1675341775291" duration="7459000" />
-      <workItem from="1675844619446" duration="4913000" />
+      <workItem from="1675844619446" duration="6936000" />
+      <workItem from="1675869175066" duration="465000" />
+      <workItem from="1675869813015" duration="19000" />
+      <workItem from="1675921777881" duration="10252000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1675852422090</created>
@@ -179,7 +285,21 @@
       <option name="project" value="LOCAL" />
       <updated>1675852518412</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="common新增">
+      <created>1675853090502</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675853090502</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Redis工具类新增，mapper修复">
+      <created>1675927304849</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675927304849</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +308,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始化项目" />
     <MESSAGE value="Redis新增" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redis新增" />
+    <MESSAGE value="common新增" />
+    <MESSAGE value="Redis工具类新增，mapper修复" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redis工具类新增，mapper修复" />
   </component>
 </project>
