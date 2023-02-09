@@ -13,6 +13,11 @@
     <packaging>jar</packaging>
 
     <dependencies>
+        <!-- 测试使用 -->
+        <dependency>
+            <groupId>com.frankzhou</groupId>
+            <artifactId>Lottery-infrastructure</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.frankzhou</groupId>
             <artifactId>Lottery-application</artifactId>
