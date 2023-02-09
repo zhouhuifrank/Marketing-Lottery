@@ -1,10 +1,12 @@
 package com.frankzhou.common.exception;
 
-import com.frankzhou.lottery.common.constants.ResponseConstants;
-import com.frankzhou.lottery.common.result.ResultDTO;
+import com.frankzhou.common.constants.ResponseCode;
+import com.frankzhou.common.constants.ResponseConstants;
+import com.frankzhou.common.result.ResultDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
@@ -26,7 +28,7 @@ public class GlobalExceptionHandler {
     */
     @ResponseBody
     @ExceptionHandler(value = BaseException.class)
-    public ResultDTO<Boolean> baseExceptionHandler(HttpServletRequest request,BaseException ex) {
+    public ResultDTO<Boolean> baseExceptionHandler(HttpServletRequest request, BaseException ex) {
         String methodName = request.getMethod();
         Map<String, String[]> parameterMap = request.getParameterMap();
 

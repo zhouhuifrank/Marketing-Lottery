@@ -7,4 +7,6 @@ package com.frankzhou.infrastructure.redis;
  * @date 2023-02-02
  */
 public class RedisData {
+    private String expireTime;
+    private Object data;
 }
