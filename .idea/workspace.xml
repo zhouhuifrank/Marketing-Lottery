@@ -5,30 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="319489a9-dbfe-4feb-8acb-845f39171f2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/redis/RedisTemplateTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/redis/RedissonTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/redis/StringTemplateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/mappers/ActivityMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/mappers/AwardMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/mappers/RuleTreeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/mappers/RuleTreeNodeLineMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/mappers/RuleTreeNodeMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/mappers/StrategyDetailMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/mappers/StrategyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/mappers/UserStrategyExportMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/mappers/UserTakeActivityCountMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/mappers/UserTakeActivityMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/scripts/unlock.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/domain/ActivityDomainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/domain/AwardDomainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/domain/IdGeneratorDomainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/domain/StrategyDomainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/mapper/ActivityMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/mapper/AwardMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/mapper/StrategyDetailMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/mapper/StrategyMapperTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/rpc/ApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/target/classes/application-dev.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/target/classes/application-prod.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/target/classes/application-test.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/Activity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/Award.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/Award.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/Strategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/Strategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/StrategyDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/StrategyDetail.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/ActivityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/ActivityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/AwardMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/AwardMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeNodeLineMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeNodeLineMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeNodeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeNodeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/StrategyDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/StrategyDetailMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/StrategyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/StrategyMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/UserStrategyExportMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/UserStrategyExportMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/UserTakeActivityCountMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/UserTakeActivityCountMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/UserTakeActivityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/UserTakeActivityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/RedisLockUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/RedisLockUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/StringRedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/StringRedisUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/scripts/unlock.lua" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/scripts/unlock.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/test/java/com/frankzhou/infrastructure/LotteryInfrastructureApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/ActivityMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/ActivityMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/interfaces/ActivityBooth.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/interfaces/ActivityBooth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-rpc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-rpc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-rpc/src/main/java/com/frankzhou/rpc/IActivityBooth.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-rpc/src/main/java/com/frankzhou/rpc/IActivityBooth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-rpc/src/main/java/com/frankzhou/rpc/dto/ActivityDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-rpc/src/main/java/com/frankzhou/rpc/dto/ActivityDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-rpc/src/main/java/com/frankzhou/rpc/req/ActivityReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-rpc/src/main/java/com/frankzhou/rpc/req/ActivityReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-rpc/src/main/java/com/frankzhou/rpc/res/ActivityRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-rpc/src/main/java/com/frankzhou/rpc/res/ActivityRes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -269,7 +277,7 @@
       <workItem from="1675844619446" duration="6936000" />
       <workItem from="1675869175066" duration="465000" />
       <workItem from="1675869813015" duration="19000" />
-      <workItem from="1675921777881" duration="10252000" />
+      <workItem from="1675921777881" duration="12912000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1675852422090</created>
@@ -299,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675927304849</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="实体类和Mapper新增,redis工具类修改">
+      <created>1675952143577</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675952143577</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +325,7 @@
     <MESSAGE value="Redis新增" />
     <MESSAGE value="common新增" />
     <MESSAGE value="Redis工具类新增，mapper修复" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redis工具类新增，mapper修复" />
+    <MESSAGE value="实体类和Mapper新增,redis工具类修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="实体类和Mapper新增,redis工具类修改" />
   </component>
 </project>
