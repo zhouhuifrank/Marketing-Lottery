@@ -11,10 +11,14 @@
 
 ## 项目使用技术
 + SpringBoot 2.x
++ MySql 8.x
 + Mybatis-Plus
++ Redis 6.x
++ Redisson
 + Dubbo 3.x
 + Zookeeper
++ Nacos
 + Kafka
 + XXL_Job
-+ Redis 6.x
-+ Nacos
++ ELK
++ Canal
