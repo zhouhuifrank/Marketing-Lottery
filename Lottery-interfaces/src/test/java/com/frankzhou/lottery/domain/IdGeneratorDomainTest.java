@@ -3,6 +3,7 @@ package com.frankzhou.lottery.domain;
 import com.alibaba.nacos.shaded.org.checkerframework.checker.units.qual.C;
 import com.frankzhou.common.constants.IdGeneratorType;
 import com.frankzhou.domain.ids.IIdGenerator;
+import com.frankzhou.domain.ids.generator.RedisId;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -26,6 +27,9 @@ public class IdGeneratorDomainTest {
     @Resource
     private Map<IdGeneratorType,IIdGenerator> idMap;
 
+    @Resource
+    private RedisId redisId;
+
     private static ExecutorService ID_GENERATOR = Executors.newFixedThreadPool(100);
 
     @Test
@@ -37,16 +41,22 @@ public class IdGeneratorDomainTest {
             for (int i=0;i<100;i++) {
                 System.out.println(snowFlake.nextId());
             }
+            latch.countDown();
         };
 
         long startTime = System.currentTimeMillis();
         for (int i=0;i<300;i++) {
             ID_GENERATOR.submit(task);
-            latch.countDown();
         }
         latch.await();
         long endTime = System.currentTimeMillis();
-        log.info("run time:{}s",(endTime-startTime)/1000);
+        log.info("run time:{}ms",(endTime-startTime));
+    }
+
+    @Test
+    public void testRedis() {
+        long id = redisId.nextId();
+        System.out.println(id);
     }
 
     @Test
@@ -56,18 +66,19 @@ public class IdGeneratorDomainTest {
 
         Runnable task = () -> {
             for (int i=0;i<100;i++) {
-                System.out.println(redisId.nextId());
+                long id = redisId.nextId();
+                System.out.println(id);
             }
+            latch.countDown();
         };
 
         long startTime = System.currentTimeMillis();
         for (int i=0;i<300;i++) {
             ID_GENERATOR.submit(task);
-            latch.countDown();
         }
         latch.await();
         long endTime = System.currentTimeMillis();
-        log.info("run time:{}s",(endTime-startTime)/1000);
+        log.info("run time:{}ms",(endTime-startTime));
     }
 
     @Test
@@ -79,16 +90,16 @@ public class IdGeneratorDomainTest {
             for (int i=0;i<100;i++) {
                 System.out.println(randomNumber.nextId());
             }
+            latch.countDown();
         };
 
         long startTime = System.currentTimeMillis();
         for (int i=0;i<300;i++) {
             ID_GENERATOR.submit(task);
-            latch.countDown();
         }
         latch.await();
         long endTime = System.currentTimeMillis();
-        log.info("run time:{}s",(endTime-startTime)/1000);
+        log.info("run time:{}ms",(endTime-startTime));
     }
 
     @Test
@@ -100,15 +111,15 @@ public class IdGeneratorDomainTest {
             for (int i=0;i<100;i++) {
                 System.out.println(timeCode.nextId());
             }
+            latch.countDown();
         };
 
         long startTime = System.currentTimeMillis();
         for (int i=0;i<300;i++) {
             ID_GENERATOR.submit(task);
-            latch.countDown();
         }
         latch.await();
         long endTime = System.currentTimeMillis();
-        log.info("run time:{}s",(endTime-startTime)/1000);
+        log.info("run time:{}ms",(endTime-startTime));
     }
 }

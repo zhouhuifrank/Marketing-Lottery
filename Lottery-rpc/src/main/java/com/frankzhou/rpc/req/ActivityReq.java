@@ -16,5 +16,5 @@ public class ActivityReq implements Serializable {
 
     private Long activityId;
 
-    private String userId;
+    private String uId;
 }
