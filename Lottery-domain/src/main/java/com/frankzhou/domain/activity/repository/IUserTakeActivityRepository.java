@@ -6,5 +6,5 @@ package com.frankzhou.domain.activity.repository;
  * @description
  * @date 2023-02-02
  */
-public class IUserTakeActivityRepository {
+public interface IUserTakeActivityRepository {
 }

@@ -31,6 +31,18 @@
         `take_count`,`state`,`creator`,`create_time`,`update_time`
     </sql>
 
+    <!-- Integer insertActivity(Activity activity) -->
+    <insert id="insertActivity" parameterType="com.frankzhou.infrastructure.entity.Activity">
+    </insert>
+
+    <!-- Integer updateActivity(Activity activity) -->
+    <insert id="updateActivity" parameterType="com.frankzhou.infrastructure.entity.Activity">
+    </insert>
+
+    <!-- Integer alterActivityState(AlterStateVO alterStateVO) -->
+    <update id="alterActivityState" keyProperty="com.frankzhou.domain.activity.model.vo.AlterStateVO">
+    </update>
+
     <!-- Activity queryActivityById(@Param("activityId") Long activityId) -->
     <select id="queryActivityById" resultMap="activityMap">
         select

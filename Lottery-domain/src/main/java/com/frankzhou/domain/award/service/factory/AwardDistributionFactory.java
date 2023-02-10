@@ -1,6 +1,5 @@
 package com.frankzhou.domain.award.service.factory;
 
-import com.frankzhou.common.constants.AwardType;
 import com.frankzhou.domain.award.service.goods.IDistributionGoods;
 import org.springframework.stereotype.Service;
 

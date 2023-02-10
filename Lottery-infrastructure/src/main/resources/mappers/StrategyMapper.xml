@@ -5,6 +5,35 @@
 <mapper namespace="com.frankzhou.infrastructure.mapper.StrategyMapper">
 
     <resultMap id="strategyMap" type="com.frankzhou.infrastructure.entity.Strategy">
+        <id column="id" property="id" javaType="Long"/>
+        <result column="strategy_id" property="strategyId" javaType="Long"/>
+        <result column="strategy_desc" property="strategyDesc" javaType="String"/>
+        <result column="strategy_mode" property="strategyMode" javaType="Integer"/>
+        <result column="grant_type" property="grantType" javaType="Integer"/>
+        <result column="grant_date" property="grantDate" javaType="java.time.LocalDateTime"/>
+        <result column="ext_info" property="extInfo" javaType="String"/>
     </resultMap>
+
+    <sql id="queryColumn">
+        `id`,`strategy_id`,`strategy_desc`,`strategy_mode`,
+        `grant_type`,`grant_date`,`ext_info`
+    </sql>
+
+    <sql id="insertColumn">
+        `id`,`strategy_id`,`strategy_desc`,`strategy_mode`,
+        `grant_type`,`grant_date`,`ext_info`,`create_time`,`update_time`
+    </sql>
+
+    <!-- Integer insertStrategy(Strategy strategy) -->
+    <insert id="insertStrategy" parameterType="com.frankzhou.infrastructure.entity.Strategy">
+    </insert>
+
+    <!-- Integer updateStrategy(Strategy strategy) -->
+    <update id="updateStrategy" parameterType="com.frankzhou.infrastructure.entity.Strategy">
+    </update>
+
+    <!-- Strategy queryStrategyById(@Param("strategyId") Long strategyId) -->
+    <select id="queryStrategyById" resultMap="strategyMap">
+    </select>
 
 </mapper>

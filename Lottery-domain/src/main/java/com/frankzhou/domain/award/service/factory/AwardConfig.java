@@ -1,7 +1,6 @@
 package com.frankzhou.domain.award.service.factory;
 
 import com.frankzhou.common.constants.AwardType;
-import com.frankzhou.common.result.PageResultDTO;
 import com.frankzhou.domain.award.service.goods.IDistributionGoods;
 import com.frankzhou.domain.award.service.goods.impl.CouponGood;
 import com.frankzhou.domain.award.service.goods.impl.DescriptionGood;
