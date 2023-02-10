@@ -6,6 +6,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.data.redis.core.script.RedisScript;
+import org.springframework.stereotype.Component;
 
 import java.util.Collections;
 import java.util.UUID;
@@ -17,9 +18,10 @@ import java.util.concurrent.TimeUnit;
  * @description Redis分布式锁工具类
  * @date 2023-02-02
  */
+@Component
 public class RedisLockUtil implements IRedisLock {
 
-    private String name;
+    private String name = "award:stock";
 
     private StringRedisTemplate stringRedisTemplate;
 
@@ -34,8 +36,7 @@ public class RedisLockUtil implements IRedisLock {
         UNLOCK_SCRIPT.setResultType(Long.class);
     }
 
-    RedisLockUtil(String name,StringRedisTemplate stringRedisTemplate) {
-        this.name = name;
+    RedisLockUtil(StringRedisTemplate stringRedisTemplate) {
         this.stringRedisTemplate = stringRedisTemplate;
     }
 

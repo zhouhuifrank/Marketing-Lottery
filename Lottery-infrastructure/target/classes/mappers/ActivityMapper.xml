@@ -5,6 +5,37 @@
 <mapper namespace="com.frankzhou.infrastructure.mapper.ActivityMapper">
 
     <resultMap id="activityMap" type="com.frankzhou.infrastructure.entity.Activity">
+        <id column="id" property="id" javaType="Long"/>
+        <result column="strategy_id" property="strategyId" javaType="Long"/>
+        <result column="activity_id" property="activityId" javaType="Long"/>
+        <result column="activity_name" property="activityName" javaType="String"/>
+        <result column="activity_desc" property="activityDesc" javaType="String"/>
+        <result column="begin_date_time" property="beginDateTime" javaType="java.time.LocalDateTime"/>
+        <result column="end_date_time" property="endDateTime" javaType="java.time.LocalDateTime"/>
+        <result column="stock_count" property="stockCount" javaType="Integer"/>
+        <result column="stock_surplus_count" property="stockSurplusCount" javaType="Integer"/>
+        <result column="take_count" property="takeCount" javaType="Integer"/>
+        <result column="state" property="state" javaType="Integer"/>
+        <result column="creator" property="creator" javaType="String"/>
     </resultMap>
+
+    <sql id="queryColumn">
+        `id`,`strategy_id`,`activity_id`,`activity_name`,`activity_desc`,
+        `begin_date_time`,`end_date_time`,`stock_count`,`stock_surplus_count`,
+        `take_count`,`state`,`creator`
+    </sql>
+
+    <sql id="insertColumn">
+        `id`,`strategy_id`,`activity_id`,`activity_name`,`activity_desc`,
+        `begin_date_time`,`end_date_time`,`stock_count`,`stock_surplus_count`,
+        `take_count`,`state`,`creator`,`create_time`,`update_time`
+    </sql>
+
+    <!-- Activity queryActivityById(@Param("activityId") Long activityId) -->
+    <select id="queryActivityById" resultMap="activityMap">
+        select
+        <include refid="queryColumn"/>
+        where activity_id = #{activityId}
+    </select>
 
 </mapper>
