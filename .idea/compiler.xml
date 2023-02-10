@@ -25,6 +25,7 @@
       <module name="Lottery-infrastructure" options="-parameters" />
       <module name="Lottery-interfaces" options="-parameters" />
       <module name="Lottery-rpc" options="-parameters" />
+      <module name="Marketing-Lottery" options="-parameters" />
     </option>
   </component>
 </project>

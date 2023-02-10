@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.frankzhou.infrastructure.entity.Activity;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * @author This.FrankZhou
@@ -13,5 +14,5 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface ActivityMapper extends BaseMapper<Activity> {
-
+    Activity queryActivityById(@Param("activityId") Long activityId);
 }
