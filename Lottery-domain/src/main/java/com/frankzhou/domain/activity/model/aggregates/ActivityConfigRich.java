@@ -25,5 +25,5 @@ public class ActivityConfigRich {
 
     private List<AwardVO> awardList;
 
-    private List<StrategyDetailVO> strategyDetailList;
+    private StrategyVO strategy;
 }
