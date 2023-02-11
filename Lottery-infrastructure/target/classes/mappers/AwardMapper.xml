@@ -5,6 +5,91 @@
 <mapper namespace="com.frankzhou.infrastructure.mapper.AwardMapper">
 
     <resultMap id="awardMap" type="com.frankzhou.infrastructure.entity.Award">
+        <id column="id" property="id" javaType="Long"/>
+        <result column="award_id" property="awardId" javaType="String"/>
+        <result column="award_type" property="awardType" javaType="Integer"/>
+        <result column="award_name" property="awardName" javaType="String"/>
+        <result column="award_content" property="awardContent" javaType="String"/>
     </resultMap>
+
+    <sql id="queryColumn">
+        `id`,`award_id`,`award_type`,`award_name`,`award_content`
+    </sql>
+
+    <sql id="insertColumn">
+        `id`,`award_id`,`award_type`,`award_name`,`award_content`,`create_time`,`update_time`
+    </sql>
+
+    <!-- Integer batchInsert(@Param("list") List<Award> awardList) -->
+    <insert id="batchInsert" parameterType="list">
+        insert into
+        award(<include refid="insertColumn"/>)
+        values
+        <foreach collection="list" item="target" index="index" separator=",">
+            (
+             #{target.id},
+             #{target.awardId},
+             #{target.awardType},
+             #{target.awardName},
+             #{target.awardContent},
+             #{target.createTime},
+             #{target.updateTime}
+            )
+        </foreach>
+    </insert>
+
+    <!-- Integer batchUpdate(@Param("list") List<Award> awardList) -->
+    <update id="batchUpdate" parameterType="list">
+        update award
+        <trim prefix="set" suffixOverrides="end,">
+            <trim prefix="award_type = case" suffix="end,">
+                <foreach collection="list" item="targetDo" index="index">
+                    <if test="targetDo.awardType != null">
+                        when award_id = #{targetDo.awardId}
+                        then #{targetDo.awardType}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="award_name = case" suffix="end,">
+                <foreach collection="list" item="targetDo" index="index">
+                    <if test="targetDo.awardName != null">
+                        when award_id = #{targetDo.awardId}
+                        then #{targetDo.awardName}
+                    </if>
+                </foreach>
+            </trim>
+            <trim prefix="award_content = case" suffix="end,">
+                <foreach collection="list" item="targetDo" index="index">
+                    <if test="targetDo.awardContent != null">
+                        when award_id = #{targetDo.awardId}
+                        then #{targetDo.awardContent}
+                    </if>
+                </foreach>
+            </trim>
+        </trim>
+        where
+        award_id in
+        <foreach collection="list" item="targetDo" open="(" separator="," close=")">
+            #{targetDo.awardId}
+        </foreach>
+    </update>
+
+    <!-- Award queryAwardByAwardId(@Param("awardId") String awardId) -->
+    <select id="queryAwardByAwardId" resultMap="awardMap">
+        select
+        <include refid="queryColumn"/>
+        from award
+        where
+        award_id = #{awardId}
+    </select>
+
+    <!-- List<Award> queryAwardByAwardType(@Param("awardType") Integer awardType) -->
+    <select id="queryAwardByAwardType" resultMap="awardMap">
+        select
+        <include refid="queryColumn"/>
+        from award
+        where
+        award_type = #{awardType}
+    </select>
 
 </mapper>

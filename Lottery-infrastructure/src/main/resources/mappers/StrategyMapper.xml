@@ -26,14 +26,42 @@
 
     <!-- Integer insertStrategy(Strategy strategy) -->
     <insert id="insertStrategy" parameterType="com.frankzhou.infrastructure.entity.Strategy">
+        insert into
+        strategy(<include refid="insertColumn"/>)
+        values(#{id},#{strategyId},#{strategyDesc},#{strategyMode},
+               #{grantType},#{grantDate},#{extInfo},#{createTime},#{updateTime})
     </insert>
 
     <!-- Integer updateStrategy(Strategy strategy) -->
     <update id="updateStrategy" parameterType="com.frankzhou.infrastructure.entity.Strategy">
+        update strategy
+        <set>
+            <if test="strategyDesc != null and strategyDesc != ''">
+                strategy_desc = #{strategyDesc},
+            </if>
+            <if test="strategyMode != null and strategyMode != ''">
+                strategy_mode = #{strategyMode},
+            </if>
+            <if test="grantType != null and grantType != ''">
+                grant_type = #{grantType},
+            </if>
+            <if test="grantDate != null and grantDate != ''">
+                grant_date = #{grantDate},
+            </if>
+            <if test="extInfo != null and extInfo != ''">
+                ext_info = #{extInfo}
+            </if>
+        </set>
+        where strategy_id = #{strategyId}
     </update>
 
     <!-- Strategy queryStrategyById(@Param("strategyId") Long strategyId) -->
     <select id="queryStrategyById" resultMap="strategyMap">
+        select
+        <include refid="queryColumn"/>
+        from strategy
+        where
+        strategy_id = #{strategyId}
     </select>
 
 </mapper>

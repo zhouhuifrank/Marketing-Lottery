@@ -18,7 +18,10 @@ public interface AwardMapper extends BaseMapper<Award> {
 
     Integer batchInsert(@Param("list") List<Award> awardList);
 
+    // TODO 批量更新暂时不测试
     Integer batchUpdate(@Param("list") List<Award> awardList);
 
     Award queryAwardByAwardId(@Param("awardId") String awardId);
+
+    List<Award> queryAwardByAwardType(@Param("awardType") Integer awardType);
 }

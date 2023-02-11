@@ -16,6 +16,7 @@ public interface StrategyMapper extends BaseMapper<Strategy> {
 
     Integer insertStrategy(Strategy strategy);
 
+    // TODO 更新暂时不测试
     Integer updateStrategy(Strategy strategy);
 
     Strategy queryStrategyById(@Param("strategyId") Long strategyId);

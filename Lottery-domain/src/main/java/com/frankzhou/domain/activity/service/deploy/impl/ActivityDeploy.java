@@ -4,6 +4,7 @@ import com.frankzhou.domain.activity.model.req.ActivityConfigReq;
 import com.frankzhou.domain.activity.repository.IActivityRepository;
 import com.frankzhou.domain.activity.service.deploy.IActivityDeploy;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
@@ -20,6 +21,7 @@ public class ActivityDeploy implements IActivityDeploy {
     private IActivityRepository activityRepository;
 
     @Override
+    @Transactional(rollbackFor = Exception.class)
     public void createActivity(ActivityConfigReq configReq) {
 
     }

@@ -21,14 +21,82 @@
 
     <sql id="insertColumn">
         `id`,`strategy_id`,`award_id`,`award_name`,`award_count`,
-        `award_surplus_count`,`award_rate`,"create_time","update_time"
+        `award_surplus_count`,`award_rate`,`create_time`,`update_time`
     </sql>
 
     <!-- Integer batchInsert(@Param("list") List<StrategyDetail> strategyDetailList) -->
     <insert id="batchInsert" parameterType="list">
+        insert into
+        strategy_detail(<include refid="insertColumn"/>)
+        values
+        <foreach collection="list" item="targetDo" index="index" separator=",">
+            (
+             #{targetDo.id},
+             #{targetDo.strategyId},
+             #{targetDo.awardId},
+             #{targetDo.awardName},
+             #{targetDo.awardCount},
+             #{targetDo.awardSurplusCount},
+             #{targetDo.awardRate},
+             #{targetDo.createTime},
+             #{targetDo.updateTime}
+            )
+        </foreach>
     </insert>
 
     <!-- Integer batchUpdate(@Param("list") List<StrategyDetail> strategyDetailList) -->
     <update id="batchUpdate" parameterType="list">
+        update strategy_detail
+        <trim prefix="set" suffixOverrides="end,">
+            <trim prefix="award_name = case" suffix="end,">
+                <foreach collection="list" item="targetDo" index="index">
+                    when strategy_id = #{targetDo.strategyId} and award_id = #{targetDo.awardId}
+                    then award_name = #{targetDo.awardName}
+                </foreach>
+            </trim>
+            <trim prefix="award_count = case" suffix="end,">
+                <foreach collection="list" item="targetDo" index="index">
+                    when strategy_id = #{targetDo.strategyId} and award_id = #{targetDo.awardId}
+                    then award_count = #{targetDo.awardCount}
+                </foreach>
+            </trim>
+            <trim prefix="award_surplus_count = case" suffix="end,">
+                <foreach collection="list" item="targetDo" index="index">
+                    when strategy_id = #{targetDo.strategyId} and award_id = #{targetDo.awardId}
+                    then award_surplus_count = #{targetDo.awardSurplusCount}
+                </foreach>
+            </trim>
+            <trim prefix="award_rate = case" suffix="end,">
+                <foreach collection="list" item="targetDo" index="index">
+                    when strategy_id = #{targetDo.strategyId} and award_id = #{targetDo.awardId}
+                    then award_rate = #{targetDo.awardRate}
+                </foreach>>
+            </trim>
+        </trim>
+        where
+        strategy_id in
+        <foreach collection="list" item="targetDo" open="(" separator="," close=")">
+            #{targetDo.strategyId}
+        </foreach>
     </update>
+
+    <!-- List<StrategyDetail> queryStrategyListById(@Param("strategyId") Long strategyId) -->
+    <select id="queryStrategyListById" resultMap="strategyDetailMap">
+        select
+        <include refid="queryColumn"/>
+        from strategy_detail
+        where
+        strategy_id = #{strategyId}
+    </select>
+
+    <!-- StrategyDetail queryStrategyDetailByCond(@Param("strategyId") Long strategyId,
+    @Param("awardId") String awardId) -->
+    <select id="queryStrategyDetailByCond" resultMap="strategyDetailMap">
+        select
+        <include refid="queryColumn"/>
+        from strategy_detail
+        where
+        strategy_id = #{strategyId}
+        and award_id = #{awardId}
+    </select>
 </mapper>

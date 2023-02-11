@@ -19,7 +19,7 @@ public class AlterStateVO {
 
     private Long activityId;
 
-    private String beforeState;
+    private Integer beforeState;
 
-    private String afterState;
+    private Integer afterState;
 }

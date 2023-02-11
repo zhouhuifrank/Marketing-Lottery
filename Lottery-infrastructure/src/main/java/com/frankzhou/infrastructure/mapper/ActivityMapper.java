@@ -19,6 +19,7 @@ public interface ActivityMapper extends BaseMapper<Activity> {
 
     Integer insertActivity(Activity activity);
 
+    // TODO 更新暂时不测试
     Integer updateActivity(Activity activity);
 
     Integer alterActivityState(AlterStateVO alterStateVO);

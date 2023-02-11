@@ -1,0 +1,37 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.10.132:3306/lottery?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: dms
+    password: Monv205850_
+
+  redis:
+    host: 192.168.10.132
+    port: 6379
+    password: monv205850
+    database: 1
+    lettuce:
+      pool:
+        max-active: 8   # 最大连接数
+        max-idle: 8     # 最大空闲连接
+        min-idle: 0     # 最小空闲连接
+        max-wait: 100ms # 连接等待时间
+
+# 开发环境使用直连模式
+dubbo:
+  application:
+    name: Lottery
+    version: 1.0.0
+  registry:
+    # address: multicast://224.5.6.7:1234
+    address: N/A
+    # address: nacos://192.168.10.132:8848
+    # address: zookeeper://192.168.10.132:2181
+  protocol:
+    name: dubbo
+    port: 20880
+  scan:
+    base-packages: com.frankzhou.lottery.rpc
