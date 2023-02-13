@@ -10,7 +10,7 @@ import lombok.Getter;
 */
 @Getter
 @AllArgsConstructor
-public enum AlgorithmConstants {
+public enum AlgorithmType {
 
     DEFAULT_RATE(1,"总体概率算法"),
     SINGLE_RATE(2,"单体概率算法");

@@ -1,9 +1,7 @@
 package com.frankzhou.domain.activity.repository;
 
-import com.frankzhou.domain.activity.model.vo.ActivityVO;
-import com.frankzhou.domain.activity.model.vo.AwardVO;
-import com.frankzhou.domain.activity.model.vo.StrategyDetailVO;
-import com.frankzhou.domain.activity.model.vo.StrategyVO;
+import com.frankzhou.common.constants.ActivityState;
+import com.frankzhou.domain.activity.model.vo.*;
 
 import java.util.List;
 
@@ -50,4 +48,15 @@ public interface IActivityRepository {
      * @return true新增成功/false新增失败
      */
     boolean addStrategyDetailList(List<StrategyDetailVO> strategyDetailVOList);
+
+    /**
+     * 变更活动状态
+     *
+     * @author this.FrankZhou
+     * @param activityId 活动号
+     * @param currentSate 当前状态
+     * @param afterState 下一个状态
+     * @return true->变更状态成功/false->变更状态失败
+     */
+    boolean alterActivityState(Long activityId, ActivityState currentSate, ActivityState afterState);
 }

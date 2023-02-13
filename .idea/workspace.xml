@@ -5,11 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="319489a9-dbfe-4feb-8acb-845f39171f2f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/ActivityState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/aspect/LoggingAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/aspect/MetricTimeAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/77a5ee20-1b55-4136-b280-372b58f06663.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/77a5ee20-1b55-4136-b280-372b58f06663.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/model/aggregates/ActivityConfigRich.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/model/aggregates/ActivityConfigRich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/AlgorithmConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/AlgorithmType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/repository/IActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/repository/IActivityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/deploy/impl/ActivityDeploy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/deploy/impl/ActivityDeploy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/AbstractStateBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/AbstractStateBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/IStateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/IStateHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/StateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/StateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/ArraignmentState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/ArraignmentState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/CloseState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/CloseState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/DoingState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/DoingState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/EditingState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/EditingState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/OpenState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/OpenState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/PassState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/PassState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/RefuseState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/RefuseState.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/impl/StateHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/impl/StateHandlerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/repository/ActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/repository/ActivityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/LotteryInterfacesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/LotteryInterfacesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,31 +102,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "D:/TechLearn/DDD-Marketing/Marketing-Lottery/Lottery-common/src/main/java/com/frankzhou/common/constants",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.19195402",
-    "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "54c6674f519bf9adccfcffd4ee2c9583",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/TechLearn/DDD-Marketing/Marketing-Lottery/Lottery-common/src/main/java/com/frankzhou/common/constants&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.19195402&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;e8c37f40f29c0db38beec1c188cb04e8&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -270,7 +288,13 @@
       <workItem from="1675869175066" duration="465000" />
       <workItem from="1675869813015" duration="19000" />
       <workItem from="1675921777881" duration="13086000" />
-      <workItem from="1675958578639" duration="30704000" />
+      <workItem from="1675958578639" duration="30961000" />
+      <workItem from="1676134887007" duration="88000" />
+      <workItem from="1676174735724" duration="24000" />
+      <workItem from="1676175163552" duration="14000" />
+      <workItem from="1676181445603" duration="2817000" />
+      <workItem from="1676184687478" duration="615000" />
+      <workItem from="1676289027922" duration="3521000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1675852422090</created>
@@ -342,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676101614529</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="新增活动配置服务">
+      <created>1676102842163</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676102842163</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,6 +401,7 @@
     <MESSAGE value="新增发奖领域 提供工厂模式调用接口" />
     <MESSAGE value="新增活动配置接口" />
     <MESSAGE value="活动配置Mapper-sql编写" />
-    <option name="LAST_COMMIT_MESSAGE" value="活动配置Mapper-sql编写" />
+    <MESSAGE value="新增活动配置服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增活动配置服务" />
   </component>
 </project>

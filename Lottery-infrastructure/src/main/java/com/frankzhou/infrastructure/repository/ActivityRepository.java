@@ -1,10 +1,8 @@
 package com.frankzhou.infrastructure.repository;
 
 import cn.hutool.core.bean.BeanUtil;
-import com.frankzhou.domain.activity.model.vo.ActivityVO;
-import com.frankzhou.domain.activity.model.vo.AwardVO;
-import com.frankzhou.domain.activity.model.vo.StrategyDetailVO;
-import com.frankzhou.domain.activity.model.vo.StrategyVO;
+import com.frankzhou.common.constants.ActivityState;
+import com.frankzhou.domain.activity.model.vo.*;
 import com.frankzhou.domain.activity.repository.IActivityRepository;
 import com.frankzhou.infrastructure.entity.Activity;
 import com.frankzhou.infrastructure.entity.Award;
@@ -92,4 +90,16 @@ public class ActivityRepository implements IActivityRepository {
         }
         return true;
     }
+
+    @Override
+    public boolean alterActivityState(Long activityId, ActivityState currentSate, ActivityState afterState) {
+        AlterStateVO alterStateVO = new AlterStateVO(activityId,currentSate.getCode(),afterState.getCode());
+        Integer count = activityMapper.alterActivityState(alterStateVO);
+        if (count < 1) {
+            return false;
+        }
+        return true;
+    }
+
+
 }
