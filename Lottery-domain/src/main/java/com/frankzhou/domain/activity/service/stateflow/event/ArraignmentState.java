@@ -27,32 +27,41 @@ public class ArraignmentState extends AbstractStateBase {
     public Result checkRevoke(Long activityId, ActivityState currentState) {
         boolean isSuccess = activityRepository.alterActivityState(activityId,currentState,ActivityState.REVOKE);
         Result res = isSuccess == true ? new Result(ResponseConstants.SUCCESS.getCode(),"活动撤审成功")
-                : new Result(ResponseConstants.UNKNOWN_ERROR.getCode(),"活动撤审失败");
+                : new Result(ResponseConstants.UNKNOWN_ERROR.getCode(),"活动状态变更失败");
         return res;
     }
 
     @Override
     public Result checkPass(Long activityId, ActivityState currentState) {
-        return null;
+        boolean isSuccess = activityRepository.alterActivityState(activityId,currentState,ActivityState.PASS);
+        Result res = isSuccess == true ? new Result(ResponseConstants.SUCCESS.getCode(),"活动审核通过")
+                : new Result(ResponseConstants.UNKNOWN_ERROR.getCode(),"活动状态变更失败");
+        return res;
     }
 
     @Override
     public Result checkRefuse(Long activityId, ActivityState currentState) {
-        return null;
+        boolean isSuccess = activityRepository.alterActivityState(activityId,currentState,ActivityState.REFUSE);
+        Result res = isSuccess == true ? new Result(ResponseConstants.SUCCESS.getCode(),"活动审核拒绝")
+                : new Result(ResponseConstants.UNKNOWN_ERROR.getCode(),"活动状态变更失败");
+        return res;
     }
 
     @Override
     public Result doing(Long activityId, ActivityState currentState) {
-        return null;
+        Result res = new Result(ResponseConstants.UNKNOWN_ERROR.getCode(),"活动还在审核中，不能进行");
+        return res;
     }
 
     @Override
     public Result close(Long activityId, ActivityState currentState) {
-        return null;
+        Result res = new Result(ResponseConstants.UNKNOWN_ERROR.getCode(),"活动还在审核中,不能关闭");
+        return res;
     }
 
     @Override
     public Result open(Long activityId, ActivityState currentState) {
-        return null;
+        Result res = new Result(ResponseConstants.UNKNOWN_ERROR.getCode(),"活动还在审核中，不能开启");
+        return res;
     }
 }

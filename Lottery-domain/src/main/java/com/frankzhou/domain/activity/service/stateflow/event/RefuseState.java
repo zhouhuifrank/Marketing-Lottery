@@ -1,6 +1,7 @@
 package com.frankzhou.domain.activity.service.stateflow.event;
 
 import com.frankzhou.common.constants.ActivityState;
+import com.frankzhou.common.constants.ResponseConstants;
 import com.frankzhou.common.result.Result;
 import com.frankzhou.domain.activity.service.stateflow.AbstractStateBase;
 import lombok.extern.slf4j.Slf4j;
@@ -18,36 +19,47 @@ public class RefuseState extends AbstractStateBase {
 
     @Override
     public Result arraignment(Long activityId, ActivityState currentState) {
-        return null;
+        Result res = new Result(ResponseConstants.SUCCESS.getCode(), "活动拒绝，不能提审");
+        return res;
     }
 
     @Override
     public Result checkRevoke(Long activityId, ActivityState currentState) {
-        return null;
+        boolean isSuccess = activityRepository.alterActivityState(activityId,currentState,ActivityState.REVOKE);
+        Result res = isSuccess == true ? new Result(ResponseConstants.SUCCESS.getCode(), "活动撤审成功")
+                : new Result(ResponseConstants.UNKNOWN_ERROR.getCode(), "活动状态变更失败");
+        return res;
     }
 
     @Override
     public Result checkPass(Long activityId, ActivityState currentState) {
-        return null;
+        Result res = new Result(ResponseConstants.SUCCESS.getCode(), "活动拒绝，不能审核通过");
+        return res;
     }
 
     @Override
     public Result checkRefuse(Long activityId, ActivityState currentState) {
-        return null;
+        Result res = new Result(ResponseConstants.SUCCESS.getCode(), "活动拒绝，不能重复拒绝");
+        return res;
     }
 
     @Override
     public Result doing(Long activityId, ActivityState currentState) {
-        return null;
+        Result res = new Result(ResponseConstants.SUCCESS.getCode(), "活动拒绝，不能进行活动");
+        return res;
     }
 
     @Override
     public Result close(Long activityId, ActivityState currentState) {
-        return null;
+        boolean isSuccess = activityRepository.alterActivityState(activityId,currentState,ActivityState.REVOKE);
+        Result res = isSuccess == true ? new Result(ResponseConstants.SUCCESS.getCode(), "活动关闭成功")
+                : new Result(ResponseConstants.UNKNOWN_ERROR.getCode(), "活动状态变更失败");
+        return res;
     }
 
     @Override
     public Result open(Long activityId, ActivityState currentState) {
-        return null;
+        Result res = new Result(ResponseConstants.SUCCESS.getCode(), "活动拒绝，不能开启活动");
+        return res;
     }
 }

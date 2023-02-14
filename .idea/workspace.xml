@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="319489a9-dbfe-4feb-8acb-845f39171f2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/ActivityState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/aspect/LoggingAspect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/aspect/MetricTimeAspect.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/77a5ee20-1b55-4136-b280-372b58f06663.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/77a5ee20-1b55-4136-b280-372b58f06663.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/AlgorithmConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/AlgorithmType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/repository/IActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/repository/IActivityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/AbstractStateBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/AbstractStateBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/IStateHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/IStateHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/StateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/StateConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/ArraignmentState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/ArraignmentState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/CloseState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/CloseState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/DoingState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/DoingState.java" afterDir="false" />
@@ -23,11 +13,7 @@
       <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/OpenState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/OpenState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/PassState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/PassState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/RefuseState.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/event/RefuseState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/impl/StateHandlerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/stateflow/impl/StateHandlerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/repository/ActivityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/repository/ActivityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/LotteryInterfacesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/LotteryInterfacesApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/rpc/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/rpc/ApiTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +131,23 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LotteryInterfacesApplication-dev">
+  <component name="RunManager" selected="JUnit.ApiTest.testHash">
+    <configuration name="ApiTest.testHash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lottery-interfaces" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frankzhou.lottery.rpc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frankzhou.lottery.rpc" />
+      <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.rpc.ApiTest" />
+      <option name="METHOD_NAME" value="testHash" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AwardMapperTest.testBatchInsert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lottery-interfaces" />
       <extension name="coverage">
@@ -157,22 +159,6 @@
       <option name="PACKAGE_NAME" value="com.frankzhou.lottery.mapper" />
       <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.mapper.AwardMapperTest" />
       <option name="METHOD_NAME" value="testBatchInsert" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AwardMapperTest.testQueryAwardByAwardType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lottery-interfaces" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.frankzhou.lottery.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.frankzhou.lottery.mapper" />
-      <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.mapper.AwardMapperTest" />
-      <option name="METHOD_NAME" value="testQueryAwardByAwardType" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -254,8 +240,8 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.ApiTest.testHash" />
       <item itemvalue="JUnit.AwardMapperTest.testBatchInsert" />
-      <item itemvalue="JUnit.AwardMapperTest.testQueryAwardByAwardType" />
       <item itemvalue="JUnit.StrategyDetailMapperTest.testBatchInsert" />
       <item itemvalue="JUnit.StrategyDetailMapperTest.testQueryStrategyListByCond" />
       <item itemvalue="JUnit.StrategyDetailMapperTest.testQueryStrategyListById" />
@@ -265,11 +251,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest.testHash" />
         <item itemvalue="JUnit.StrategyDetailMapperTest.testBatchInsert" />
         <item itemvalue="JUnit.StrategyDetailMapperTest.testQueryStrategyListByCond" />
         <item itemvalue="JUnit.StrategyDetailMapperTest.testQueryStrategyListById" />
         <item itemvalue="JUnit.AwardMapperTest.testBatchInsert" />
-        <item itemvalue="JUnit.AwardMapperTest.testQueryAwardByAwardType" />
       </list>
     </recent_temporary>
   </component>
@@ -294,7 +280,8 @@
       <workItem from="1676175163552" duration="14000" />
       <workItem from="1676181445603" duration="2817000" />
       <workItem from="1676184687478" duration="615000" />
-      <workItem from="1676289027922" duration="3521000" />
+      <workItem from="1676289027922" duration="3555000" />
+      <workItem from="1676340212319" duration="3854000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1675852422090</created>
@@ -373,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676102842163</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="状态模式处理活动状态流转">
+      <created>1676295663869</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676295663869</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,6 +396,7 @@
     <MESSAGE value="新增活动配置接口" />
     <MESSAGE value="活动配置Mapper-sql编写" />
     <MESSAGE value="新增活动配置服务" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增活动配置服务" />
+    <MESSAGE value="状态模式处理活动状态流转" />
+    <option name="LAST_COMMIT_MESSAGE" value="状态模式处理活动状态流转" />
   </component>
 </project>
