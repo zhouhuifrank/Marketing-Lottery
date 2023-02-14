@@ -24,4 +24,6 @@ public interface AwardMapper extends BaseMapper<Award> {
     Award queryAwardByAwardId(@Param("awardId") String awardId);
 
     List<Award> queryAwardByAwardType(@Param("awardType") Integer awardType);
+
+    Integer queryNextAwardId();
 }

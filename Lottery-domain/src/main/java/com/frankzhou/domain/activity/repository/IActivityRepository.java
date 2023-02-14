@@ -35,10 +35,10 @@ public interface IActivityRepository {
      * 添加策略配置信息
      *
      * @author this.FrankZhou
-     * @param strategy 策略信息
+     * @param strategyVO 策略信息
      * @return true新增成功/false新增失败
      */
-    boolean addStrategy(StrategyVO strategy);
+    boolean addStrategy(StrategyVO strategyVO);
 
     /**
      * 添加策略明细列表
@@ -58,5 +58,5 @@ public interface IActivityRepository {
      * @param afterState 下一个状态
      * @return true->变更状态成功/false->变更状态失败
      */
-    boolean alterActivityState(Long activityId, ActivityState currentSate, ActivityState afterState);
+    boolean alterActivityState(Long activityId, Enum<ActivityState> currentSate, Enum<ActivityState> afterState);
 }

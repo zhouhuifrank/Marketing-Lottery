@@ -37,26 +37,26 @@ public class ActivityDeploy implements IActivityDeploy {
         ActivityConfigRich configRich = configReq.getActivityConfigRich();
         try {
             ActivityVO activity = configRich.getActivity();
-            boolean flag1 = activityRepository.addActivity(activity);
-            if (!flag1) {
+            boolean flag = activityRepository.addActivity(activity);
+            if (!flag) {
                 throw new RuntimeException("数据库插入异常");
             }
 
             List<AwardVO> awardList = configRich.getAwardList();
-            boolean flag2 = activityRepository.addAwardList(awardList);
-            if (!flag2) {
+            flag = activityRepository.addAwardList(awardList);
+            if (!flag) {
                 throw new RuntimeException("数据库插入异常");
             }
 
             StrategyVO strategy = configRich.getStrategy();
-            boolean flag3 = activityRepository.addStrategy(strategy);
-            if (!flag3) {
+            flag = activityRepository.addStrategy(strategy);
+            if (!flag) {
                 throw new RuntimeException("数据库插入异常");
             }
 
             List<StrategyDetailVO> strategyDetailList = configRich.getStrategy().getStrategyDetailList();
-            boolean flag4 = activityRepository.addStrategyDetailList(strategyDetailList);
-            if (!flag4) {
+            flag = activityRepository.addStrategyDetailList(strategyDetailList);
+            if (!flag) {
                 throw new RuntimeException("数据库插入异常");
             }
             log.info("活动配置创建完成:{}",activityId);

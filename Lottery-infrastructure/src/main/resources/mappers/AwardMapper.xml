@@ -92,4 +92,10 @@
         award_type = #{awardType}
     </select>
 
+    <!-- Integer queryNextAwardId() -->
+    <select id="queryNextAwardId" resultType="Integer">
+        select count(id)+1
+        from activity
+    </select>
+
 </mapper>

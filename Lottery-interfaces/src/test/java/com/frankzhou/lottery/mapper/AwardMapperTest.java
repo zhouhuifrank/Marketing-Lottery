@@ -38,6 +38,12 @@ public class AwardMapperTest {
     }
 
     @Test
+    public void testQueryNextAwardId() {
+        Integer awardId = awardMapper.queryNextAwardId();
+        System.out.println(awardId);
+    }
+
+    @Test
     public void testBatchInsert() {
         Award award1 = Award
                 .builder()

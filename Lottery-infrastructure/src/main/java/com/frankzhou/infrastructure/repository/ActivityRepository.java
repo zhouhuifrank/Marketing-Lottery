@@ -92,14 +92,13 @@ public class ActivityRepository implements IActivityRepository {
     }
 
     @Override
-    public boolean alterActivityState(Long activityId, ActivityState currentSate, ActivityState afterState) {
-        AlterStateVO alterStateVO = new AlterStateVO(activityId,currentSate.getCode(),afterState.getCode());
+    public boolean alterActivityState(Long activityId, Enum<ActivityState> beforeState, Enum<ActivityState> afterState) {
+        AlterStateVO alterStateVO = new AlterStateVO(activityId,((ActivityState)beforeState).getCode(),((ActivityState)afterState).getCode());
         Integer count = activityMapper.alterActivityState(alterStateVO);
         if (count < 1) {
             return false;
         }
         return true;
     }
-
 
 }

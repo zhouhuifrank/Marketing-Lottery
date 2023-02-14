@@ -1,6 +1,8 @@
 package com.frankzhou.lottery.mapper;
 
+import com.frankzhou.common.constants.ActivityState;
 import com.frankzhou.domain.activity.model.vo.AlterStateVO;
+import com.frankzhou.domain.activity.repository.IActivityRepository;
 import com.frankzhou.infrastructure.entity.Activity;
 import com.frankzhou.infrastructure.mapper.ActivityMapper;
 import org.junit.jupiter.api.Test;
@@ -57,4 +59,5 @@ public class ActivityMapperTest {
         Integer count = activityMapper.insertActivity(activity);
         System.out.println("插入数据:"+count);
     }
+
 }
