@@ -33,6 +33,8 @@ public class ActivityBooth implements IActivityBooth {
             return null;
         }
 
+        log.info("用户:{}参与抽奖活动:{}",activityReq.getUId(),activityReq.getActivityId());
+
         Activity activity;
         Long activityId = activityReq.getActivityId();
         activity = activityMapper.queryActivityById(activityId);

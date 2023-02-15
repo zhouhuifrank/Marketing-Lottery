@@ -3,6 +3,9 @@ package com.frankzhou.infrastructure.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.frankzhou.infrastructure.entity.StrategyDetail;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * @author This.FrankZhou
@@ -12,5 +15,15 @@ import org.apache.ibatis.annotations.Mapper;
  */
 @Mapper
 public interface StrategyDetailMapper extends BaseMapper<StrategyDetail> {
+
+    Integer batchInsert(@Param("list") List<StrategyDetail> strategyDetailList);
+
+    // TODO 批量更新暂时不测试
+    Integer batchUpdate(@Param("list") List<StrategyDetail> strategyDetailList);
+
+    List<StrategyDetail> queryStrategyListById(@Param("strategyId") Long strategyId);
+
+    StrategyDetail queryStrategyDetailByCond(@Param("strategyId") Long strategyId,
+                                             @Param("awardId") String awardId);
 
 }

@@ -20,21 +20,75 @@
     </resultMap>
 
     <sql id="queryColumn">
-        `id`,`strategy_id`,`activity_id`,`activity_name`,`activity_desc`,
+        `id`,`activity_id`,`strategy_id`,`activity_name`,`activity_desc`,
         `begin_date_time`,`end_date_time`,`stock_count`,`stock_surplus_count`,
         `take_count`,`state`,`creator`
     </sql>
 
     <sql id="insertColumn">
-        `id`,`strategy_id`,`activity_id`,`activity_name`,`activity_desc`,
+        `id`,`activity_id`,`strategy_id`,`activity_name`,`activity_desc`,
         `begin_date_time`,`end_date_time`,`stock_count`,`stock_surplus_count`,
         `take_count`,`state`,`creator`,`create_time`,`update_time`
     </sql>
+
+    <!-- Integer insertActivity(Activity activity) -->
+    <insert id="insertActivity" parameterType="com.frankzhou.infrastructure.entity.Activity">
+        insert into
+        activity(<include refid="insertColumn"/>)
+        values(#{id},#{activityId},#{strategyId},#{activityName},#{activityDesc},
+               #{beginDateTime},#{endDateTime},#{stockCount},#{stockSurplusCount},
+               #{takeCount},#{state},#{creator},#{createTime},#{updateTime})
+    </insert>
+
+    <!-- Integer updateActivity(Activity activity) -->
+    <insert id="updateActivity" parameterType="com.frankzhou.infrastructure.entity.Activity">
+        update activity
+        <set>
+            <if test="activity_name != null and activity_name != ''">
+                activity_name = #{activityName},
+            </if>
+            <if test="activity_desc != null and activity_desc != ''">
+                activity_desc = #{activityDesc},
+            </if>
+            <if test="begin_date_time != null and begin_date_time != ''">
+                begin_date_time = #{beginDateTime},
+            </if>
+            <if test="end_date_time != null and end_date_time != ''">
+                end_date_time = #{endDateTime},
+            </if>
+            <if test="stock_count != null and stock_count != ''">
+                stock_count = #{stockCount},
+            </if>
+            <if test="stock_surplus_count != null and stock_surplus_count != ''">
+                stock_surplus_count = #{stockSurplusCount},
+            </if>
+            <if test="take_count != null and take_count != ''">
+                take_count = #{takeCount},
+            </if>
+            <if test="state != null and state != ''">
+                state = #{state},
+            </if>
+            <if test="creator != null and creator != ''">
+                creator = #{creator}
+            </if>
+        </set>
+        where
+        activity_id = #{activityId}
+    </insert>
+
+    <!-- Integer alterActivityState(AlterStateVO alterStateVO) -->
+    <update id="alterActivityState" keyProperty="com.frankzhou.domain.activity.model.vo.AlterStateVO">
+        update activity
+        set state = #{afterState}
+        where activity_id = #{activityId}
+        and state = #{beforeState}
+    </update>
 
     <!-- Activity queryActivityById(@Param("activityId") Long activityId) -->
     <select id="queryActivityById" resultMap="activityMap">
         select
         <include refid="queryColumn"/>
+        from activity
         where activity_id = #{activityId}
     </select>
 

@@ -1,10 +1,12 @@
 package com.frankzhou.infrastructure.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.frankzhou.domain.activity.model.vo.AlterStateVO;
 import com.frankzhou.infrastructure.entity.Activity;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * @author This.FrankZhou
@@ -14,5 +16,13 @@ import org.apache.ibatis.annotations.Param;
  */
 @Mapper
 public interface ActivityMapper extends BaseMapper<Activity> {
+
+    Integer insertActivity(Activity activity);
+
+    // TODO 更新暂时不测试
+    Integer updateActivity(Activity activity);
+
+    Integer alterActivityState(AlterStateVO alterStateVO);
+
     Activity queryActivityById(@Param("activityId") Long activityId);
 }
