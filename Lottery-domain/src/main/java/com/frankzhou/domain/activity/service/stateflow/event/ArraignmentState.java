@@ -18,6 +18,12 @@ import org.springframework.stereotype.Component;
 public class ArraignmentState extends AbstractStateBase {
 
     @Override
+    public Result edit(Long activityId, ActivityState currentState) {
+        Result res = new Result(ResponseConstants.SUCCESS.getCode(), "活动审核种，不能变更为编辑");
+        return res;
+    }
+
+    @Override
     public Result arraignment(Long activityId, ActivityState currentState) {
         Result res = new Result(ResponseConstants.UNKNOWN_ERROR.getCode(),"提审状态不可重复提交");
         return res;

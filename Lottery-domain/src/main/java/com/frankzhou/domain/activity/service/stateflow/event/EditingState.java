@@ -18,6 +18,12 @@ import org.springframework.stereotype.Component;
 public class EditingState extends AbstractStateBase {
 
     @Override
+    public Result edit(Long activityId, ActivityState currentState) {
+        Result res = new Result(ResponseConstants.SUCCESS.getCode(), "编辑状态不能重复编辑");
+        return res;
+    }
+
+    @Override
     public Result arraignment(Long activityId, ActivityState currentState) {
         boolean isSuccess = activityRepository.alterActivityState(activityId,currentState,ActivityState.ARRAIGNMENT);
         Result res = isSuccess == true ? new Result(ResponseConstants.SUCCESS.getCode(), "活动提审成功")

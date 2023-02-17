@@ -18,6 +18,12 @@ import org.springframework.stereotype.Component;
 public class RefuseState extends AbstractStateBase {
 
     @Override
+    public Result edit(Long activityId, ActivityState currentState) {
+        Result res = new Result(ResponseConstants.SUCCESS.getCode(), "拒绝状态不能变更为编辑，需要先撤审");
+        return res;
+    }
+
+    @Override
     public Result arraignment(Long activityId, ActivityState currentState) {
         Result res = new Result(ResponseConstants.SUCCESS.getCode(), "活动拒绝，不能提审");
         return res;

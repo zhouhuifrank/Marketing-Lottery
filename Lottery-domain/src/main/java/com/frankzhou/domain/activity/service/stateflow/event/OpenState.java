@@ -18,6 +18,12 @@ import org.springframework.stereotype.Component;
 public class OpenState extends AbstractStateBase {
 
     @Override
+    public Result edit(Long activityId, ActivityState currentState) {
+        Result res = new Result(ResponseConstants.SUCCESS.getCode(), "活动开启中，不能进行编辑");
+        return res;
+    }
+
+    @Override
     public Result arraignment(Long activityId, ActivityState currentState) {
         Result res = new Result(ResponseConstants.SUCCESS.getCode(), "活动开启中，不能进行提审");
         return res;

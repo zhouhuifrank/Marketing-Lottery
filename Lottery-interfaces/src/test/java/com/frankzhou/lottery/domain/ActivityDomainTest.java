@@ -2,6 +2,7 @@ package com.frankzhou.lottery.domain;
 
 import com.alibaba.nacos.shaded.org.checkerframework.checker.units.qual.C;
 import com.frankzhou.common.constants.ActivityState;
+import com.frankzhou.common.result.Result;
 import com.frankzhou.domain.activity.model.aggregates.ActivityConfigRich;
 import com.frankzhou.domain.activity.model.req.ActivityConfigReq;
 import com.frankzhou.domain.activity.model.vo.ActivityVO;
@@ -36,7 +37,7 @@ public class ActivityDomainTest {
     private IActivityDeploy activityDeploy;
 
     @Resource
-    private IStateHandler stateHandler;
+    private IStateHandler stateHandlerImpl;
 
     @Resource
     private IActivityRepository activityRepository;
@@ -131,9 +132,22 @@ public class ActivityDomainTest {
     }
 
     @Test
+    public void testStateHandler() {
+        Long activityId = 100004L;
+        Result res1 = stateHandlerImpl.arraignment(activityId,ActivityState.EDIT);
+        System.out.println(res1);
+
+        Result res2 = stateHandlerImpl.checkPass(activityId,ActivityState.ARRAIGNMENT);
+        System.out.println(res2);
+
+        Result res3 = stateHandlerImpl.doing(activityId,ActivityState.PASS);
+        System.out.println(res3);
+    }
+
+    @Test
     public void testAlterState() {
         Long activityId = 100004L;
-        boolean isSuccess = activityRepository.alterActivityState(activityId, ActivityState.EDIT, ActivityState.PASS);
+        boolean isSuccess = activityRepository.alterActivityState(activityId, ActivityState.CLOSE, ActivityState.ARRAIGNMENT);
         if (isSuccess) {
             System.out.println("活动状态变更成功");
         } else {
