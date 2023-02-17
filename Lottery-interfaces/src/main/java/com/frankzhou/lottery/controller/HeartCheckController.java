@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/test")
-public class HeatCheckController {
+public class HeartCheckController {
 
     @GetMapping("/connection")
     public Result testConnection() {

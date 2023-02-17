@@ -76,15 +76,18 @@ public class ActivityDeploy implements IActivityDeploy {
 
     @Override
     public void downLoadActivityTemplate() {
-
+        // TODO excel后台下载
+        log.info("TODO 非核心功能，待项目大体完成进行开发");
     }
 
     @Override
     public void uploadActivityTemplate(MultipartFile dataFile) {
-
+        // TODO excel后台上传
+        log.info("TODO 非核心功能，待项目大体完成进行开发");
     }
-    
+
     private boolean checkActivity() {
+        log.info("TODO 保证活动配置数据落库的数据一致性，关联关系正确修");
         return false;
     }
 }
