@@ -1,8 +1,11 @@
 package com.frankzhou.lottery.rpc;
 
-import com.frankzhou.rpc.IActivityBooth;
+import com.frankzhou.rpc.IActivityService;
+import com.frankzhou.rpc.IAwardService;
 import com.frankzhou.rpc.req.ActivityReq;
+import com.frankzhou.rpc.req.AwardReq;
 import com.frankzhou.rpc.res.ActivityRes;
+import com.frankzhou.rpc.res.AwardRes;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -20,7 +23,10 @@ import java.util.List;
 public class ApiTest {
 
     @Resource
-    private IActivityBooth activityBooth;
+    private IActivityService activityService;
+
+    @Resource
+    private IAwardService awardService;
 
     @Test
     public void testQueryActivityById() {
@@ -28,8 +34,17 @@ public class ApiTest {
         req.setActivityId(100003L);
         req.setUId("FrankZhou");
 
-        ActivityRes activityRes = activityBooth.queryActivityById(req);
+        ActivityRes activityRes = activityService.queryActivityById(req);
         System.out.println(activityRes);
+    }
+
+    @Test
+    public void testQueryAwardByAwardType() {
+        AwardReq req = new AwardReq();
+        req.setAwardType(1);
+
+        AwardRes awardRes = awardService.queryAwardByAwardType(req);
+        System.out.println(awardRes);
     }
 
     @Test

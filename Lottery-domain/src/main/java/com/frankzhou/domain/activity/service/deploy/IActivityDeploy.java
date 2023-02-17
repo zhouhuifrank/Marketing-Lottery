@@ -1,6 +1,7 @@
 package com.frankzhou.domain.activity.service.deploy;
 
 import com.frankzhou.domain.activity.model.req.ActivityConfigReq;
+import org.springframework.web.multipart.MultipartFile;
 
 /**
  * @author This.FrankZhou
@@ -27,4 +28,23 @@ public interface IActivityDeploy {
      * @return void
      */
     void updateActivity(ActivityConfigReq configReq);
+
+    /**
+     * 下载活动配置上传模板
+     *
+     * @author this.FrankZhou
+     * @param
+     * @return void
+     */
+    void downLoadActivityTemplate();
+
+
+    /**
+     * 上传填写的活动配置模板信息
+     *
+     * @author this.FrankZhou
+     * @param
+     * @return void
+     */
+    void uploadActivityTemplate(MultipartFile dataFile);
 }

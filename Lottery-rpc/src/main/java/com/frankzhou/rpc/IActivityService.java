@@ -1,6 +1,5 @@
 package com.frankzhou.rpc;
 
-import com.frankzhou.infrastructure.entity.Activity;
 import com.frankzhou.rpc.req.ActivityReq;
 import com.frankzhou.rpc.res.ActivityRes;
 
@@ -10,7 +9,7 @@ import com.frankzhou.rpc.res.ActivityRes;
  * @description 活动服务RPC接口信息
  * @date 2023-02-02
  */
-public interface IActivityBooth {
+public interface IActivityService {
 
     /**
      * 根据活动id查询具体的活动信息
