@@ -18,6 +18,12 @@ import org.springframework.stereotype.Component;
 public class PassState extends AbstractStateBase {
 
     @Override
+    public Result edit(Long activityId, ActivityState currentState) {
+        Result res = new Result(ResponseConstants.SUCCESS.getCode(), "活动已经审核通过，不能进行编辑");
+        return res;
+    }
+
+    @Override
     public Result arraignment(Long activityId, ActivityState currentState) {
         Result res = new Result(ResponseConstants.SUCCESS.getCode(), "活动进行中，不能提审");
         return res;

@@ -18,6 +18,11 @@ import org.springframework.stereotype.Service;
 public class StateHandlerImpl extends StateConfig implements IStateHandler {
 
     @Override
+    public Result edit(Long activityId, ActivityState currentState) {
+        return stateMap.get(currentState).edit(activityId,currentState);
+    }
+
+    @Override
     public Result arraignment(Long activityId, ActivityState currentState) {
         return stateMap.get(currentState).arraignment(activityId,currentState);
     }

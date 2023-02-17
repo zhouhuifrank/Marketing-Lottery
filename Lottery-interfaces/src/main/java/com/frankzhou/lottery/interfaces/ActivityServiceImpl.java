@@ -4,7 +4,7 @@ import com.frankzhou.common.constants.ResponseConstants;
 import com.frankzhou.common.result.Result;
 import com.frankzhou.infrastructure.entity.Activity;
 import com.frankzhou.infrastructure.mapper.ActivityMapper;
-import com.frankzhou.rpc.IActivityBooth;
+import com.frankzhou.rpc.IActivityService;
 import com.frankzhou.rpc.dto.ActivityDTO;
 import com.frankzhou.rpc.req.ActivityReq;
 import com.frankzhou.rpc.res.ActivityRes;
@@ -22,7 +22,7 @@ import java.util.Objects;
  */
 @Slf4j
 @DubboService
-public class ActivityBooth implements IActivityBooth {
+public class ActivityServiceImpl implements IActivityService {
 
     @Resource
     private ActivityMapper activityMapper;

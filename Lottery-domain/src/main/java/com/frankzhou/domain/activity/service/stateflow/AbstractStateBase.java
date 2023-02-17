@@ -18,6 +18,16 @@ public abstract class AbstractStateBase {
     protected IActivityRepository activityRepository;
 
     /**
+     * 编辑状态
+     *
+     * @author this.FrankZhou
+     * @param activityId 活动号
+     * @param currentState 当前状态
+     * @return 响应码
+     */
+    public abstract Result edit(Long activityId, ActivityState currentState);
+
+    /**
      * 提审状态
      *
      * @author this.FrankZhou

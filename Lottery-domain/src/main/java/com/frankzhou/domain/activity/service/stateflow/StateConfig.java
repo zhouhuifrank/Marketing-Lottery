@@ -35,6 +35,9 @@ public class StateConfig {
     private PassState passState;
 
     @Resource
+    private RevokeState revokeState;
+
+    @Resource
     private RefuseState refuseState;
 
     protected Map<ActivityState,AbstractStateBase> stateMap = new ConcurrentHashMap<>();
@@ -45,6 +48,7 @@ public class StateConfig {
         stateMap.put(ActivityState.CLOSE,closeState);
         stateMap.put(ActivityState.DOING,doingState);
         stateMap.put(ActivityState.EDIT,editingState);
+        stateMap.put(ActivityState.REVOKE,revokeState);
         stateMap.put(ActivityState.OPEN,openState);
         stateMap.put(ActivityState.PASS,passState);
         stateMap.put(ActivityState.REFUSE,refuseState);
