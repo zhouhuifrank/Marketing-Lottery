@@ -1,0 +1,15 @@
+com\frankzhou\common\exception\SystemException.class
+com\frankzhou\common\constants\ActivityState.class
+com\frankzhou\common\exception\BaseException.class
+com\frankzhou\common\exception\ServiceException.class
+com\frankzhou\common\support\MyMetaObjectHandler.class
+com\frankzhou\common\result\PageResultDTO.class
+com\frankzhou\common\result\Result.class
+com\frankzhou\common\constants\ResponseConstants.class
+com\frankzhou\common\constants\ResponseCode.class
+com\frankzhou\common\constants\AlgorithmType.class
+com\frankzhou\common\support\JacksonObjectMapper.class
+com\frankzhou\common\constants\AwardType.class
+com\frankzhou\common\constants\IdGeneratorType.class
+com\frankzhou\common\result\ResultDTO.class
+com\frankzhou\common\exception\GlobalExceptionHandler.class

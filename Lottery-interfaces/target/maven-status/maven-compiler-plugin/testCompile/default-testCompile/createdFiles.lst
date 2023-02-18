@@ -1,0 +1,14 @@
+com\frankzhou\lottery\application\KafkaTest.class
+com\frankzhou\lottery\mapper\StrategyDetailMapperTest.class
+com\frankzhou\lottery\rpc\ApiTest.class
+com\frankzhou\lottery\mapper\StrategyMapperTest.class
+com\frankzhou\lottery\domain\IdGeneratorDomainTest.class
+com\frankzhou\lottery\domain\StrategyDomainTest.class
+com\frankzhou\lottery\mapper\ActivityMapperTest.class
+com\frankzhou\lottery\domain\ActivityDomainTest.class
+com\frankzhou\lottery\redis\RedisTemplateTest.class
+com\frankzhou\lottery\domain\AwardDomainTest.class
+com\frankzhou\lottery\LotteryInterfacesApplicationTests.class
+com\frankzhou\lottery\redis\StringTemplateTest.class
+com\frankzhou\lottery\redis\RedissonTest.class
+com\frankzhou\lottery\mapper\AwardMapperTest.class

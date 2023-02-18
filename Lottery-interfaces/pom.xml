@@ -35,6 +35,11 @@
             <artifactId>Lottery-rpc</artifactId>
         </dependency>
         <dependency>
+            <groupId>com.frankzhou</groupId>
+            <artifactId>Lottery-redis</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>

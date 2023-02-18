@@ -1,0 +1,3 @@
+com\frankzhou\application\mq\KafkaConsumer.class
+com\frankzhou\application\mq\KafkaProducer.class
+com\frankzhou\application\mq\KafkaProducer$1.class

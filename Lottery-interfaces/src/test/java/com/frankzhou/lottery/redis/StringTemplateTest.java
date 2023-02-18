@@ -1,6 +1,6 @@
 package com.frankzhou.lottery.redis;
 
-import com.frankzhou.infrastructure.redis.StringRedisUtil;
+import com.frankzhou.redis.cache.StringRedisUtil;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.StringRedisTemplate;

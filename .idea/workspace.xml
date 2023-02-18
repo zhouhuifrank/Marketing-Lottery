@@ -4,20 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="319489a9-dbfe-4feb-8acb-845f39171f2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/vo/AwardRateVO.java" afterDir="false" />
+    <list default="true" id="319489a9-dbfe-4feb-8acb-845f39171f2f" name="Changes" comment="新增redis包,">
+      <change afterPath="$PROJECT_DIR$/Lottery-application/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-application/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-application/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-common/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/target/Lottery.jar.original" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-interfaces/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-redis/src/main/java/com/frankzhou/redis/cache/RedisCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-redis/src/main/java/com/frankzhou/redis/cache/SortedSetData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-redis/src/main/resources/scripts/deductStock.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-redis/src/main/resources/scripts/unlock.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-redis/target/classes/scripts/unlock.lua" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-rpc/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-rpc/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-rpc/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/deploy/impl/ActivityDeploy.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/activity/service/deploy/impl/ActivityDeploy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/AbstractAlgorithmBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/AbstractAlgorithmBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/IDrawAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/IDrawAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/impl/EntiretyRateDrawAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/impl/EntiretyRateDrawAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/impl/SingleRateDrawAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/impl/SingleRateDrawAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/DrawConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/DrawConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/StrategyDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/StrategyDetailMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/RedisKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/RedisKeys.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/StrategyDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/StrategyDetailMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/controller/HeatCheckController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/controller/HeartCheckController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/domain/StrategyDomainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/domain/StrategyDomainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/IRedisLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-redis/src/main/java/com/frankzhou/redis/cache/IRedisLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/RedisData.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-redis/src/main/java/com/frankzhou/redis/cache/RedisData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/RedisKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-redis/src/main/java/com/frankzhou/redis/cache/RedisKeys.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/RedisLockUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-redis/src/main/java/com/frankzhou/redis/cache/RedisLockUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/RedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-redis/src/main/java/com/frankzhou/redis/cache/RedisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/redis/StringRedisUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-redis/src/main/java/com/frankzhou/redis/cache/StringRedisUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/scripts/unlock.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/mappers/StrategyDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/mappers/StrategyDetailMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/scripts/unlock.lua" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/config/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-redis/src/main/java/com/frankzhou/redis/config/RedisConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/src/main/java/com/frankzhou/lottery/config/RedissonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-redis/src/main/java/com/frankzhou/redis/config/RedissonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/redis/RedisTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/redis/RedisTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/redis/RedissonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/redis/RedissonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/redis/StringTemplateTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/src/test/java/com/frankzhou/lottery/redis/StringTemplateTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +145,7 @@
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.19195402",
     "settings.editor.selected.configurable": "MavenSettings",
-    "spring.configuration.checksum": "e8c37f40f29c0db38beec1c188cb04e8",
+    "spring.configuration.checksum": "02d1317b5ab2d2f7b0c66c4f25f6f395",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -135,24 +172,8 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.StrategyDomainTest.testSingleRateAlgorithm">
-    <configuration name="IdGeneratorDomainTest.testSnowFlake" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Lottery-interfaces" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.frankzhou.lottery.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.frankzhou.lottery.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.domain.IdGeneratorDomainTest" />
-      <option name="METHOD_NAME" value="testSnowFlake" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RedissonTest.testLock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.RedisTemplateTest.testZSetRedis">
+    <configuration name="RedisTemplateTest.testCacheObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lottery-interfaces" />
       <extension name="coverage">
         <pattern>
@@ -161,14 +182,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.frankzhou.lottery.redis" />
-      <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.redis.RedissonTest" />
-      <option name="METHOD_NAME" value="testLock" />
+      <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.redis.RedisTemplateTest" />
+      <option name="METHOD_NAME" value="testCacheObject" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RedissonTest.testPlainLock" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisTemplateTest.testHashFieldRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lottery-interfaces" />
       <extension name="coverage">
         <pattern>
@@ -177,40 +198,56 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.frankzhou.lottery.redis" />
-      <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.redis.RedissonTest" />
-      <option name="METHOD_NAME" value="testPlainLock" />
+      <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.redis.RedisTemplateTest" />
+      <option name="METHOD_NAME" value="testHashFieldRedis" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StrategyDomainTest.testEntiretyRateAlgorithm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisTemplateTest.testListRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lottery-interfaces" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.frankzhou.lottery.domain.*" />
+          <option name="PATTERN" value="com.frankzhou.lottery.redis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.frankzhou.lottery.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.domain.StrategyDomainTest" />
-      <option name="METHOD_NAME" value="testEntiretyRateAlgorithm" />
+      <option name="PACKAGE_NAME" value="com.frankzhou.lottery.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.redis.RedisTemplateTest" />
+      <option name="METHOD_NAME" value="testListRedis" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StrategyDomainTest.testSingleRateAlgorithm" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RedisTemplateTest.testSetRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lottery-interfaces" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.frankzhou.lottery.domain.*" />
+          <option name="PATTERN" value="com.frankzhou.lottery.redis.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.frankzhou.lottery.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.domain.StrategyDomainTest" />
-      <option name="METHOD_NAME" value="testSingleRateAlgorithm" />
+      <option name="PACKAGE_NAME" value="com.frankzhou.lottery.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.redis.RedisTemplateTest" />
+      <option name="METHOD_NAME" value="testSetRedis" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RedisTemplateTest.testZSetRedis" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lottery-interfaces" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.frankzhou.lottery.redis.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.frankzhou.lottery.redis" />
+      <option name="MAIN_CLASS_NAME" value="com.frankzhou.lottery.redis.RedisTemplateTest" />
+      <option name="METHOD_NAME" value="testZSetRedis" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -244,22 +281,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.IdGeneratorDomainTest.testSnowFlake" />
-      <item itemvalue="JUnit.RedissonTest.testLock" />
-      <item itemvalue="JUnit.RedissonTest.testPlainLock" />
-      <item itemvalue="JUnit.StrategyDomainTest.testEntiretyRateAlgorithm" />
-      <item itemvalue="JUnit.StrategyDomainTest.testSingleRateAlgorithm" />
+      <item itemvalue="JUnit.RedisTemplateTest.testCacheObject" />
+      <item itemvalue="JUnit.RedisTemplateTest.testHashFieldRedis" />
+      <item itemvalue="JUnit.RedisTemplateTest.testListRedis" />
+      <item itemvalue="JUnit.RedisTemplateTest.testSetRedis" />
+      <item itemvalue="JUnit.RedisTemplateTest.testZSetRedis" />
       <item itemvalue="Spring Boot.LotteryInterfacesApplication-dev" />
       <item itemvalue="Spring Boot.LotteryInterfacesApplication-test" />
       <item itemvalue="Spring Boot.LotteryInterfacesApplication-prod" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StrategyDomainTest.testSingleRateAlgorithm" />
-        <item itemvalue="JUnit.StrategyDomainTest.testEntiretyRateAlgorithm" />
-        <item itemvalue="JUnit.IdGeneratorDomainTest.testSnowFlake" />
-        <item itemvalue="JUnit.RedissonTest.testLock" />
-        <item itemvalue="JUnit.RedissonTest.testPlainLock" />
+        <item itemvalue="JUnit.RedisTemplateTest.testZSetRedis" />
+        <item itemvalue="JUnit.RedisTemplateTest.testSetRedis" />
+        <item itemvalue="JUnit.RedisTemplateTest.testListRedis" />
+        <item itemvalue="JUnit.RedisTemplateTest.testHashFieldRedis" />
+        <item itemvalue="JUnit.RedisTemplateTest.testCacheObject" />
       </list>
     </recent_temporary>
   </component>
@@ -289,7 +326,9 @@
       <workItem from="1676515233999" duration="3479000" />
       <workItem from="1676599814813" duration="3619000" />
       <workItem from="1676630517188" duration="2365000" />
-      <workItem from="1676632928805" duration="14629000" />
+      <workItem from="1676632928805" duration="14762000" />
+      <workItem from="1676690284767" duration="1521000" />
+      <workItem from="1676691822089" duration="3653000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1675852422090</created>
@@ -403,7 +442,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676638976767</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="新增抽奖算法">
+      <created>1676653700530</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1676653700530</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -437,6 +483,7 @@
     <MESSAGE value="Kafka消息队列使用" />
     <MESSAGE value="RPC接口调试优化" />
     <MESSAGE value="活动状态流转优化" />
-    <option name="LAST_COMMIT_MESSAGE" value="活动状态流转优化" />
+    <MESSAGE value="新增抽奖算法" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增抽奖算法" />
   </component>
 </project>

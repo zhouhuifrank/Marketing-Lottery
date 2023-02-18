@@ -99,4 +99,14 @@
         strategy_id = #{strategyId}
         and award_id = #{awardId}
     </select>
+
+    <!-- List<StrategyDetail> queryNoStockAward(@Param("strategyId") Long strategyId) -->
+    <select id="queryNoStockAward" resultMap="strategyDetailMap">
+        select
+        <include refid="queryColumn"/>
+        from strategy_detail
+        where
+        strategy_id = #{strategyId}
+        and award_surplus_count = 0;
+    </select>
 </mapper>
