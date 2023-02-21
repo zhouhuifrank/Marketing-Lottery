@@ -1,6 +1,6 @@
 package com.frankzhou.domain.strategy.model.res;
 
-import com.frankzhou.domain.strategy.model.vo.DrawAwardVO;
+import com.frankzhou.domain.strategy.model.vo.DrawAwardBriefVO;
 import lombok.Builder;
 import lombok.Data;
 
@@ -23,7 +23,7 @@ public class DrawResult {
      */
     private Integer drawState;
 
-    private DrawAwardVO drawAwardVO;
+    private DrawAwardBriefVO drawAwardVO;
 
     public DrawResult() {
 
@@ -35,7 +35,7 @@ public class DrawResult {
         this.drawState = drawState;
     }
 
-    public DrawResult(String uId,Long strategyId,Integer drawState,DrawAwardVO drawAwardVO) {
+    public DrawResult(String uId, Long strategyId, Integer drawState, DrawAwardBriefVO drawAwardVO) {
         this.uId = uId;
         this.strategyId = strategyId;
         this.drawState = drawState;

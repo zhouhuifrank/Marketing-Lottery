@@ -14,12 +14,10 @@ import java.util.List;
 @Component("singleRateDrawAlgorithm")
 public class SingleRateDrawAlgorithm extends AbstractAlgorithmBase {
 
-    private static final String NO_AWARD = "感谢参与";
-
     @Override
     public String randomDraw(Long strategyId, List<String> excludeAwardIdList) {
         if (!rateHashArrayMap.containsKey(strategyId)) {
-            return NO_AWARD;
+            return "";
         }
 
         String[] rateArray = rateHashArrayMap.get(strategyId);
@@ -32,7 +30,7 @@ public class SingleRateDrawAlgorithm extends AbstractAlgorithmBase {
         String awardId = rateArray[hashIndex];
         // 判断是否是排除掉的奖品
         if (excludeAwardIdList.contains(awardId)) {
-            return NO_AWARD;
+            return "";
         }
 
         return awardId;

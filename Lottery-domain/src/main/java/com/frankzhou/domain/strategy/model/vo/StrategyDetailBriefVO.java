@@ -17,7 +17,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class StrategyDetailVO {
+public class StrategyDetailBriefVO {
 
     private Long strategyId;
 

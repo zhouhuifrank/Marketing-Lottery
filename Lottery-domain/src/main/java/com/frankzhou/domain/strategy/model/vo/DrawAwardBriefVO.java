@@ -17,7 +17,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class DrawAwardVO {
+public class DrawAwardBriefVO {
 
     private String uId;
 
@@ -33,5 +33,5 @@ public class DrawAwardVO {
 
     private Integer grantType;
 
-    private LocalDateTime gRANTdATE;
+    private LocalDateTime grantDate;
 }

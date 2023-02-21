@@ -5,25 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="319489a9-dbfe-4feb-8acb-845f39171f2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/AwardState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/DrawState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/GrantState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/MqState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/NodeLimitType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/NodeType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/TaskState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/aggregates/StrategyRich.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/req/DrawReq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/res/DrawResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/vo/AwardVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/vo/DrawAwardVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/vo/StrategyDetailVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/vo/StrategyVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/ResponseConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/ResponseConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/aggregates/StrategyRich.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/aggregates/StrategyRich.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/res/DrawResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/res/DrawResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/vo/AwardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/vo/AwardBriefVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/vo/DrawAwardVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/vo/DrawAwardBriefVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/vo/StrategyDetailVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/vo/StrategyDetailBriefVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/vo/StrategyVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/model/vo/StrategyBfiefVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/repository/IStrategyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/repository/IStrategyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/AbstractAlgorithmBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/AbstractAlgorithmBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/impl/EntiretyRateDrawAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/impl/EntiretyRateDrawAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/impl/SingleRateDrawAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/algorithm/impl/SingleRateDrawAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/AbstractDrawBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/AbstractDrawBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/DrawConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/DrawConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/DrawSupport.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/DrawSupport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/IDrawExecute.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/IDrawExecute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/impl/DrawExecuteImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/strategy/service/draw/impl/DrawExecuteImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/StrategyDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/StrategyDetailMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/repository/StrategyRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/repository/StrategyRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/StrategyDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/StrategyDetailMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-redis/src/main/java/com/frankzhou/redis/cache/RedisKeys.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-redis/src/main/java/com/frankzhou/redis/cache/RedisKeys.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -299,7 +301,9 @@
       <workItem from="1676690284767" duration="1521000" />
       <workItem from="1676691822089" duration="3719000" />
       <workItem from="1676695564245" duration="663000" />
-      <workItem from="1676803566580" duration="4304000" />
+      <workItem from="1676803566580" duration="5352000" />
+      <workItem from="1676887824632" duration="605000" />
+      <workItem from="1676963550939" duration="8077000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1675852422090</created>
@@ -427,7 +431,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676695534173</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="新增枚举类和实体类">
+      <created>1676808895519</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1676808895519</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,6 +474,7 @@
     <MESSAGE value="活动状态流转优化" />
     <MESSAGE value="新增抽奖算法" />
     <MESSAGE value="新增redis包,优化RedisTemplate工具类" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增redis包,优化RedisTemplate工具类" />
+    <MESSAGE value="新增枚举类和实体类" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增枚举类和实体类" />
   </component>
 </project>

@@ -8,9 +8,9 @@ package com.frankzhou.redis.cache;
  */
 public class RedisKeys {
 
-    private static final String INIT_HASH_KEY = "init:hash:";
+    public static final String INIT_HASH_KEY = "init:hash:";
 
-    private static final Long INIT_HASH_TTL = 10L;
+    public static final Long INIT_HASH_TTL = 10L;
 
-    private static final String ACTIVITY__DEPLOY_KEY = "activity:deploy:";
+    public static final String ACTIVITY__DEPLOY_KEY = "activity:deploy:";
 }

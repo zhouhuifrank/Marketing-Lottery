@@ -4,7 +4,6 @@ import com.frankzhou.common.constants.AlgorithmType;
 import com.frankzhou.domain.strategy.service.algorithm.IDrawAlgorithm;
 import com.frankzhou.domain.strategy.service.algorithm.impl.EntiretyRateDrawAlgorithm;
 import com.frankzhou.domain.strategy.service.algorithm.impl.SingleRateDrawAlgorithm;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -15,10 +14,9 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * @author This.FrankZhou
  * @version 1.0
- * @description
+ * @description 抽奖配置类 策略模式使用
  * @date 2023-02-02
  */
-@Service
 public class DrawConfig {
 
     @Resource

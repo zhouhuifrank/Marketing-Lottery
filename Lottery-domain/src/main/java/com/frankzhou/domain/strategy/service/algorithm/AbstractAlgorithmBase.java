@@ -2,6 +2,7 @@ package com.frankzhou.domain.strategy.service.algorithm;
 
 import com.frankzhou.common.constants.AlgorithmType;
 import com.frankzhou.domain.strategy.model.vo.AwardRateVO;
+import com.frankzhou.redis.cache.RedisKeys;
 import lombok.extern.slf4j.Slf4j;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
@@ -61,7 +62,7 @@ public abstract class AbstractAlgorithmBase implements IDrawAlgorithm {
         }
         log.info("抽奖概率hash数组开始初始化");
         // 初始化哈希数组值，需要加锁
-        RLock lock = redissonClient.getLock("init:rate:");
+        RLock lock = redissonClient.getLock(RedisKeys.INIT_HASH_KEY);
         // 等待10秒，锁一秒后就释放
         boolean isLock = lock.tryLock(10,1, TimeUnit.SECONDS);
         if (isLock) {

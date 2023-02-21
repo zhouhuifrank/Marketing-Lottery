@@ -1,7 +1,7 @@
 package com.frankzhou.domain.strategy.model.aggregates;
 
-import com.frankzhou.domain.strategy.model.vo.StrategyDetailVO;
-import com.frankzhou.domain.strategy.model.vo.StrategyVO;
+import com.frankzhou.domain.strategy.model.vo.StrategyDetailBriefVO;
+import com.frankzhou.domain.strategy.model.vo.StrategyBfiefVO;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -23,7 +23,7 @@ public class StrategyRich {
 
     private Long strategyId;
 
-    private StrategyVO strategy;
+    private StrategyBfiefVO strategyVo;
 
-    private List<StrategyDetailVO> strategyDetailList;
+    private List<StrategyDetailBriefVO> strategyDetailList;
 }

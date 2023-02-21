@@ -20,13 +20,10 @@ import java.util.stream.Collectors;
  */
 @Component("entiretyRateDrawAlgorithm")
 public class EntiretyRateDrawAlgorithm extends AbstractAlgorithmBase {
-
-    private static final String NO_AWARD = "感谢参与";
-
     @Override
     public String randomDraw(Long strategyId, List<String> excludeAwardIdList) {
         if (!rateInfoMap.containsKey(strategyId)) {
-            return NO_AWARD;
+            return "";
         }
 
         List<AwardRateVO> awardRateVOList = rateInfoMap.get(strategyId);
@@ -49,7 +46,7 @@ public class EntiretyRateDrawAlgorithm extends AbstractAlgorithmBase {
 
         // 排除不需要进行抽奖计算的
         if (availableAwardList.size() == 0) {
-            return NO_AWARD;
+            return "";
         }
         if (availableAwardList.size() == 1) {
             return awardRateVOList.get(0).getAwardId();

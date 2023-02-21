@@ -28,4 +28,6 @@ public interface StrategyDetailMapper extends BaseMapper<StrategyDetail> {
 
 
     List<StrategyDetail> queryNoStockAward(@Param("strategyId") Long strategyId);
+
+    Integer deductStock(@Param("strategyId") Long strategyId,@Param("awardId") String awardId);
 }

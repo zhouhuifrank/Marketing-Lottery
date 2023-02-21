@@ -5,23 +5,29 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
+
 /**
  * @author This.FrankZhou
  * @version 1.0
- * @description 奖品实体类
+ * @description 策略实体类
  * @date 2023-02-19
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class AwardVO {
+public class StrategyBfiefVO {
 
-    private String awardId;
+    private Long strategyId;
 
-    private Integer awardType;
+    private String strategyDesc;
 
-    private String awardName;
+    private Integer strategyMode;
 
-    private String awardContent;
+    private Integer grantType;
+
+    private LocalDateTime grantDate;
+
+    private String extInfo;
 }

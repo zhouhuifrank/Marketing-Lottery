@@ -107,6 +107,15 @@
         from strategy_detail
         where
         strategy_id = #{strategyId}
-        and award_surplus_count = 0;
+        and award_surplus_count = 0
     </select>
+
+    <!-- Integer deductStock(@Param("strategyId") Long strategyId,@Param("awardId") String awardId) -->
+    <update id="deductStock">
+        update strategy_detail
+        set award_surplus_count = award_surplus_count - 1
+        where strategy_id = #{strategyId}
+        and award_id = #{awardId}
+        and award_surplus_count > 0
+    </update>
 </mapper>
