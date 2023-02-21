@@ -17,4 +17,22 @@
         `id`,`tree_id`,`node_id_from`,`node_id_to`,`rule_limit_type`,`rule_limit_value`
     </sql>
 
+    <!-- List<RuleTreeNodeLine> queryTreeNodeLineList(@Param("treeId") Long treeId,@Param("nodeIdFrom") Long nodeIdFrom) -->
+    <select id="queryTreeNodeLineList" resultMap="ruleTreeNodeLineMap">
+        select
+        <include refid="baseColumn"/>
+        from rule_tree_node_line
+        where
+        tree_id = #{treeId}
+        and node_id_from = #{nodeIdFrom}
+    </select>
+
+    <!-- Integer queryTreeNodeLineCount(@Param("treeId") Long treeId) -->
+    <select id="queryTreeNodeLineCount" resultMap="ruleTreeNodeLineMap">
+        select
+        count(id)
+        from rule_tree_node_line
+        where
+        tree_id = #{treeId}
+    </select>
 </mapper>
