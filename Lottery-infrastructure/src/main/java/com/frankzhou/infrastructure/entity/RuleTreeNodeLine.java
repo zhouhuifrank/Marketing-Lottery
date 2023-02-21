@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 /**
  * @author This.FrankZhou
  * @version 1.0
- * @description
+ * @description 规则决策树连线信息 用于找到某个节点的子树信息 以及保存具体规则信息
  * @date 2023-02-02
  */
 @Data

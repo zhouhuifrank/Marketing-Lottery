@@ -1,0 +1,10 @@
+com\frankzhou\rpc\req\ActivityReq.class
+com\frankzhou\rpc\IActivityService.class
+com\frankzhou\rpc\dto\ActivityDTO.class
+com\frankzhou\rpc\res\ActivityRes.class
+com\frankzhou\rpc\dto\ActivityDTO$ActivityDTOBuilder.class
+com\frankzhou\rpc\IAwardService.class
+com\frankzhou\rpc\dto\AwardDTO.class
+com\frankzhou\rpc\req\AwardReq.class
+com\frankzhou\rpc\res\AwardRes.class
+com\frankzhou\rpc\dto\AwardDTO$AwardDTOBuilder.class

@@ -1,0 +1,14 @@
+D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-interfaces\src\test\java\com\frankzhou\lottery\redis\RedisTemplateTest.java
+D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-interfaces\src\test\java\com\frankzhou\lottery\domain\AwardDomainTest.java
+D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-interfaces\src\test\java\com\frankzhou\lottery\redis\StringTemplateTest.java
+D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-interfaces\src\test\java\com\frankzhou\lottery\domain\StrategyDomainTest.java
+D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-interfaces\src\test\java\com\frankzhou\lottery\mapper\StrategyMapperTest.java
+D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-interfaces\src\test\java\com\frankzhou\lottery\mapper\StrategyDetailMapperTest.java
+D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-interfaces\src\test\java\com\frankzhou\lottery\application\KafkaTest.java
+D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-interfaces\src\test\java\com\frankzhou\lottery\LotteryInterfacesApplicationTests.java
+D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-interfaces\src\test\java\com\frankzhou\lottery\mapper\ActivityMapperTest.java
+D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-interfaces\src\test\java\com\frankzhou\lottery\domain\IdGeneratorDomainTest.java
+D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-interfaces\src\test\java\com\frankzhou\lottery\rpc\ApiTest.java
+D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-interfaces\src\test\java\com\frankzhou\lottery\domain\ActivityDomainTest.java
+D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-interfaces\src\test\java\com\frankzhou\lottery\mapper\AwardMapperTest.java
+D:\TechLearn\DDD-Marketing\Marketing-Lottery\Lottery-interfaces\src\test\java\com\frankzhou\lottery\redis\RedissonTest.java

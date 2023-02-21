@@ -6,7 +6,7 @@
 
     <resultMap id="ruleTreeMap" type="com.frankzhou.infrastructure.entity.RuleTreeNode">
         <id column="id" property="id" javaType="Long"/>
-        <result column="tree_id" property="treeId" javaType="Integer"/>
+        <result column="tree_id" property="treeId" javaType="Long"/>
         <result column="node_type" property="nodeType" javaType="Integer"/>
         <result column="node_value" property="nodeValue" javaType="String"/>
         <result column="rule_key" property="ruleKey" javaType="String"/>
@@ -16,5 +16,29 @@
     <sql id="baseColumn">
         `id`,`tree_id`,`node_type`,`node_value`,`rule_key`,`rule_desc`
     </sql>
+
+    <!-- List<RuleTreeNode> queryTreeNodeList(@Param("treeId") Integer treeId) -->
+    <select id="queryTreeNodeList" parameterType="java.lang.Long" resultMap="ruleTreeMap">
+        select
+        <include refid="baseColumn"/>
+        from rule_tree_node
+        where tree_id = #{treeId}
+    </select>
+
+    <!-- Integer queryTreeNodeCount(@Param("list") Integer treeId) -->
+    <select id="queryTreeNodeCount" parameterType="java.lang.Long" resultMap="ruleTreeMap">
+        select count(id)
+        from rule_tree_node
+        where tree_id = #{treeId}
+    </select>
+
+    <!-- List<RuleTreeNode> queryTreeNodePoint(@Param("treeId") Integer treeId) -->
+    <select id="queryTreeNodePoint" parameterType="java.lang.Long" resultMap="ruleTreeMap">
+        select
+        distinct(rule_key),rule_desc
+        from rule_tree_node
+        where tree_id = #{treeId}
+        and rule_key is not null
+    </select>
 
 </mapper>

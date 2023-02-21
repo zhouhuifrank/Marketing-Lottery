@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 /**
  * @author This.FrankZhou
  * @version 1.0
- * @description
+ * @description 规则决策树信息 带根节点Id
  * @date 2023-02-02
  */
 @Data

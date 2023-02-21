@@ -1,12 +1,10 @@
 package com.frankzhou.lottery.redis;
 
-import com.frankzhou.infrastructure.redis.RedisLockUtil;
-import com.frankzhou.infrastructure.redis.RedisUtil;
+import com.frankzhou.redis.cache.RedisLockUtil;
 import org.junit.jupiter.api.Test;
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.redis.core.StringRedisTemplate;
 
 import javax.annotation.Resource;
 import java.util.concurrent.TimeUnit;
@@ -19,9 +17,6 @@ import java.util.concurrent.TimeUnit;
  */
 @SpringBootTest
 public class RedissonTest {
-
-    @Resource
-    private StringRedisTemplate stringRedisTemplate;
 
     @Resource
     private RedissonClient redissonClient;

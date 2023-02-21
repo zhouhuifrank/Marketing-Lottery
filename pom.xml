@@ -23,6 +23,7 @@
         <module>Lottery-domain</module>
         <module>Lottery-application</module>
         <module>Lottery-interfaces</module>
+        <module>Lottery-redis</module>
     </modules>
 
     <properties>
@@ -43,6 +44,8 @@
         <aspectj.version>1.9.9</aspectj.version>
         <spring.aspects.version>6.0.0</spring.aspects.version>
         <dubbo.version>3.0.7</dubbo.version>
+        <mapstruct.version>1.4.2.Final</mapstruct.version>
+        <db.router.version>1.0.0-SNAPSHOT</db.router.version>
     </properties>
 
     <dependencies>
@@ -95,6 +98,11 @@
                 <version>${project.version}</version>
             </dependency>
             <dependency>
+                <groupId>com.frankzhou</groupId>
+                <artifactId>Lottery-redis</artifactId>
+                <version>1.0.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
                 <groupId>com.baomidou</groupId>
                 <artifactId>mybatis-plus-boot-starter</artifactId>
                 <version>${mybatis.plus.boot.version}</version>
@@ -130,11 +138,13 @@
                 <artifactId>log4j</artifactId>
                 <version>${log4j.version}</version>
             </dependency>
+            <!-- hutool工具类 -->
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
             </dependency>
+            <!-- redis客户端 -->
             <dependency>
                 <groupId>redis.clients</groupId>
                 <artifactId>jedis</artifactId>
@@ -145,6 +155,7 @@
                 <artifactId>redisson</artifactId>
                 <version>${redisson.version}</version>
             </dependency>
+            <!-- Dubbo -->
             <dependency>
                 <groupId>org.apache.dubbo</groupId>
                 <artifactId>dubbo-spring-boot-starter</artifactId>
@@ -170,6 +181,7 @@
                 <artifactId>spring-context-support</artifactId>
                 <version>${alibaba.spring.version}</version>
             </dependency>
+            <!-- AOP切面 -->
             <dependency>
                 <groupId>org.aspectj</groupId>
                 <artifactId>aspectjweaver</artifactId>
@@ -180,6 +192,29 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-aspects</artifactId>
                 <version>${spring.aspects.version}</version>
+            </dependency>
+            <!-- 对象转换 -->
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.mapstruct</groupId>
+                <artifactId>mapstruct-processor</artifactId>
+                <version>${mapstruct.version}</version>
+            </dependency>
+            <!-- 分布式任务调度 -->
+            <dependency>
+                <groupId>com.xuxueli</groupId>
+                <artifactId>xxl-job-core</artifactId>
+                <version>2.3.0</version>
+            </dependency>
+            <!-- 数据库路由组件 -->
+            <dependency>
+                <groupId>cn.bugstack.middleware</groupId>
+                <artifactId>db-router-spring-boot-starter</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

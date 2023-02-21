@@ -3,6 +3,7 @@ package com.frankzhou.infrastructure.mapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.frankzhou.infrastructure.entity.RuleTree;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * @author This.FrankZhou
@@ -13,4 +14,7 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface RuleTreeMapper extends BaseMapper<RuleTree> {
 
+    RuleTree queryRuleTreeByTreeId(@Param("id") Long id);
+
+    RuleTree queryRuleSummaryInfo(@Param("id") Long id);
 }

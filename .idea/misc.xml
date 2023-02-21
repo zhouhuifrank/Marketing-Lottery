@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/Lottery-domain/pom.xml" />
         <option value="$PROJECT_DIR$/Lottery-infrastructure/pom.xml" />
         <option value="$PROJECT_DIR$/Lottery-common/pom.xml" />
+        <option value="$PROJECT_DIR$/Lottery-redis/pom.xml" />
       </list>
     </option>
   </component>

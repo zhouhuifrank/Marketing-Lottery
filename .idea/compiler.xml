@@ -7,9 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Lottery-interfaces" />
         <module name="Lottery-application" />
         <module name="Lottery-rpc" />
+        <module name="Lottery-interfaces" />
+        <module name="Lottery-redis" />
         <module name="Lottery-domain" />
         <module name="Lottery-infrastructure" />
         <module name="Lottery-common" />
@@ -24,8 +25,9 @@
       <module name="Lottery-domain" options="-parameters" />
       <module name="Lottery-infrastructure" options="-parameters" />
       <module name="Lottery-interfaces" options="-parameters" />
+      <module name="Lottery-redis" options="-parameters" />
       <module name="Lottery-rpc" options="-parameters" />
-      <module name="Marketing-Lottery" options="-parameters" />
+      <module name="Marketing-Lottery" options="" />
     </option>
   </component>
 </project>
