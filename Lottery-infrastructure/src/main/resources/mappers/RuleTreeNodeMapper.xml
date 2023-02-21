@@ -6,7 +6,7 @@
 
     <resultMap id="ruleTreeMap" type="com.frankzhou.infrastructure.entity.RuleTreeNode">
         <id column="id" property="id" javaType="Long"/>
-        <result column="tree_id" property="treeId" javaType="Integer"/>
+        <result column="tree_id" property="treeId" javaType="Long"/>
         <result column="node_type" property="nodeType" javaType="Integer"/>
         <result column="node_value" property="nodeValue" javaType="String"/>
         <result column="rule_key" property="ruleKey" javaType="String"/>

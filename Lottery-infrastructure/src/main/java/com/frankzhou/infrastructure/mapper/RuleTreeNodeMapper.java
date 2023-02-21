@@ -16,9 +16,9 @@ import java.util.List;
 @Mapper
 public interface RuleTreeNodeMapper extends BaseMapper<RuleTreeNode> {
 
-    List<RuleTreeNode> queryTreeNodeList(@Param("treeId") Integer treeId);
+    List<RuleTreeNode> queryTreeNodeList(@Param("treeId") Long treeId);
 
-    Integer queryTreeNodeCount(@Param("list") Integer treeId);
+    Integer queryTreeNodeCount(@Param("list") Long treeId);
 
-    List<RuleTreeNode> queryTreeNodePoint(@Param("treeId") Integer treeId);
+    List<RuleTreeNode> queryTreeNodePoint(@Param("treeId") Long treeId);
 }

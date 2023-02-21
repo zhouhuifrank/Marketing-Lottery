@@ -4,17 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="319489a9-dbfe-4feb-8acb-845f39171f2f" name="Changes" comment="模板化抽奖流程">
+    <list default="true" id="319489a9-dbfe-4feb-8acb-845f39171f2f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Lottery-common/src/main/java/com/frankzhou/common/constants/NodeLimitTypeConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/model/aggregates/TreeRuleRich.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/model/req/DecisionFactorReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/model/res/EngineResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/model/vo/RuleNodeLineVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/model/vo/RuleNodeVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/model/vo/RuleRootVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/repository/IRuleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/service/engine/AbstractEngineBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/service/engine/EngineConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/service/engine/IEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/service/engine/impl/EngineHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/service/logic/BaseLogicFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/service/logic/ILogicFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/service/logic/impl/UserAgeFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/service/logic/impl/UserConsumeFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/service/logic/impl/UserGenderFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lottery-domain/src/main/java/com/frankzhou/domain/rule/service/logic/impl/UserRiskFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/RuleTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/RuleTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/RuleTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/RuleTreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/RuleTreeNodeLine.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/entity/RuleTreeNodeLine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeNodeLineMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeNodeLineMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeNodeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/mapper/RuleTreeNodeMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/RuleTreeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/RuleTreeMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/RuleTreeNodeLineMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/RuleTreeNodeLineMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/repository/RuleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/java/com/frankzhou/infrastructure/repository/RuleRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/RuleTreeNodeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/src/main/resources/mappers/RuleTreeNodeMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/mappers/StrategyDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/classes/mappers/StrategyDetailMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-infrastructure/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-infrastructure/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/target/Lottery.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/target/Lottery.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-interfaces/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-interfaces/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lottery-redis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Lottery-redis/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +46,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="NewLua" />
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
-        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -292,7 +313,7 @@
       <workItem from="1676695564245" duration="663000" />
       <workItem from="1676803566580" duration="5352000" />
       <workItem from="1676887824632" duration="605000" />
-      <workItem from="1676963550939" duration="11219000" />
+      <workItem from="1676963550939" duration="19648000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目">
       <created>1675852422090</created>
@@ -434,7 +455,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676979068481</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="规则引擎相关sql新增">
+      <created>1676987817320</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1676987817320</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,6 +500,7 @@
     <MESSAGE value="新增redis包,优化RedisTemplate工具类" />
     <MESSAGE value="新增枚举类和实体类" />
     <MESSAGE value="模板化抽奖流程" />
-    <option name="LAST_COMMIT_MESSAGE" value="模板化抽奖流程" />
+    <MESSAGE value="规则引擎相关sql新增" />
+    <option name="LAST_COMMIT_MESSAGE" value="规则引擎相关sql新增" />
   </component>
 </project>
